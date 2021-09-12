@@ -5,7 +5,6 @@ export const AppContent = styled.div`
     min-height: 657px;
 `;
 
-
 export const HeaderContent = styled.div`
     width: 100%;
     background: blue;
@@ -24,6 +23,7 @@ export const ImgContent = styled.div`
     grid-row: 2/3;
     grid-column: 1/2;
     background-image: url("https://i.imgur.com/SFUXtXn.png");
+    background-repeat: no-repeat;
     background-position: -50px -75px;
     border-radius: 5px;
     margin: 0px 5px 5px 0px;

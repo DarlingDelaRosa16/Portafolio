@@ -9,9 +9,9 @@ const Menu = () => {
                     
                     <MenuLogo >XD</MenuLogo>
                     
-                    <a className="navButton"  to="/">Sobre Mi</a>
-                    <a className="navButton"  to="/projects">Proyectos</a>
-                    <a className="navButton"  to="/contact">Contacto</a>
+                    <a className="navButton"  to="/">About me</a>
+                    <a className="navButton"  to="/projects">Projects</a>
+                    <a className="navButton"  to="/contact">Contact</a>
     
                     <MenuButton  display={"none"}>EN</MenuButton>
                     

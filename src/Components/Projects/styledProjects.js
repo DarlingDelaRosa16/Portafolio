@@ -6,7 +6,7 @@ export const ContentBox = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr) );
     grid-template-rows: auto;
-    min-height: 350px;
+    min-height: 657px;
     @media (max-width: 399px){
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
     }
@@ -16,7 +16,6 @@ export const TitleProjects = styled.h3`
     grid-row: 1/2 ;
     text-align: center;
     font-size: 25px;
-    margin-bottom: 30px;
 `;
 
 export const ProjectsCard = styled.div`
@@ -24,7 +23,7 @@ export const ProjectsCard = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     background: white;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 250, 0.4) 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.2) 0px -3px 0px inset;
     width:95%;
     height: 285px;
     margin: 10px;

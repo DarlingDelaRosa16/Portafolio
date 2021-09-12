@@ -3,11 +3,9 @@ import styled from 'styled-components'
 export const ContentBox = styled.div`
     width: 80%;
     margin-inline:10%;
-    min-height: 260px;
-    padding: 199.5px 0px 199.5px 0px;
-    
+    min-height: 268px;
+    padding: 179.5px 0px 179.5px 0px;
     display: grid ;
-    
     grid-template-rows: 160px 100px;
     grid-template-columns: 1fr 1fr;
 `;
@@ -17,7 +15,7 @@ export const ContentInfoAboutMe = styled.div`
     grid-column: 1/3;
     grid-row: 1/2;
     display: grid ;
-    grid-template-rows: 50px 80px; 
+    grid-template-rows: 54px 80px; 
 `;
 
 export const TitleInfoAboutMe = styled.h3`
@@ -36,6 +34,7 @@ export const InfoAboutMe = styled.p`
 
 export const ContentAboutSkills = styled(ContentInfoAboutMe)`
     grid-row: 2/3;
+    margin-top: 25px;
 `;
 
 export const ContentIcons = styled.div`
