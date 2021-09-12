@@ -4,6 +4,10 @@ import {FaReact, FaNodeJs, FaBootstrap, FaHtml5, FaCss3} from 'react-icons/fa'
 import { SiStyledComponents, SiMongodb, SiJavascript, SiMaterialUi } from "react-icons/si";
 
 const About = () => {
+
+    const pechuga =  window.innerHeight;
+    console.log(pechuga)
+
     return (
         <ContentBox>
             <ContentInfoAboutMe>
@@ -12,12 +16,10 @@ const About = () => {
             </ContentInfoAboutMe>
             <ContentAboutSkills>
                 <TitleInfoAboutMe>Skills</TitleInfoAboutMe>
-                <InfoAboutMe>
                     <ContentIcons>
-                    <FaCss3/> <FaReact/> <FaNodeJs/> <FaBootstrap/> <FaHtml5/> 
-                    <SiMongodb/> <SiMaterialUi/> <SiStyledComponents/> <SiJavascript/> 
-                    </ContentIcons>                    
-                </InfoAboutMe>
+                        <FaCss3/> <FaReact/> <FaNodeJs/> <FaBootstrap/> <FaHtml5/> 
+                        <SiMongodb/> <SiMaterialUi/> <SiStyledComponents/> <SiJavascript/> 
+                    </ContentIcons>  
             </ContentAboutSkills>
         </ContentBox>
     );
