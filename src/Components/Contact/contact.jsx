@@ -14,13 +14,7 @@ const Contact = () => {
                         <ContactTextBox gridColumn={"1/2"} gridRow={"4/5"}/>
                         <ContactLabel gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"5/6"} >Description</ContactLabel>
                         <ContactTextArea id="contactArea"/>
-                        <ContactButton>Send</ContactButton>
-                        <ContactContentSocial>
-                            <ContactSocialMedias url={"https://i.imgur.com/h5PAQtA.png"} target="_blank" href={"https://github.com/DarlingDelaRosa16"}/>
-                            <ContactSocialMedias url={"https://i.imgur.com/gqavrtd.png"} target="_blank" href={"https://www.instagram.com/darling_delarosa/"}/>
-                            <ContactSocialMedias posX={"-20.5px"} url={"https://i.imgur.com/nnqiyAA.png"} target="_blank" href={"https://www.linkedin.com/in/darling-nomar-de-la-rosa-314872219/"} />
-                        </ContactContentSocial>
-                        
+                        <ContactButton>Send</ContactButton>                        
                     </form>
                 </ContactContent>
             </ContentBox>
