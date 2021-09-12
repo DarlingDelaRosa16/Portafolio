@@ -1,0 +1,20 @@
+.navButton{
+    grid-row:2/3;
+    text-decoration: none;
+    margin: 16px;
+    font-size: 19px;
+}
+
+.navDropButton{
+    text-decoration: none;
+    margin: 16px;
+    font-size: 19px;
+    grid-column: 1/3;
+    text-align: center;
+}
+
+@media screen and (max-width: 760px){
+    .navButton{
+        display: none;
+    } 
+}
