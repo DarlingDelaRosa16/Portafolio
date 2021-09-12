@@ -4,6 +4,7 @@ import Menu from './Components/Menu/menu';
 import About from './Components/About/about'
 import Projects from './Components/Projects/projects';
 import Contact from './Components/Contact/contact';
+import Footer from './Components/Footer/footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <About/>
         <Projects/>
         <Contact/>
+        <Footer/>
      </AppContent>
   );
 }

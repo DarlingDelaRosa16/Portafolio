@@ -1,12 +1,9 @@
 import React from 'react'
 import {ContentBox, ContentInfoAboutMe, TitleInfoAboutMe,ContentIcons, InfoAboutMe, ContentAboutSkills} from './styledAbout'
 import {FaReact, FaNodeJs, FaBootstrap, FaHtml5, FaCss3} from 'react-icons/fa'
-import { SiStyledComponents, SiMongodb, SiJavascript, SiMaterialUi } from "react-icons/si";
+import { SiStyledComponents, SiMongodb, SiJavascript, SiMaterialUi, SiGithub } from "react-icons/si";
 
 const About = () => {
-
-    const pechuga =  window.innerHeight;
-    console.log(pechuga)
 
     return (
         <ContentBox>
@@ -18,7 +15,7 @@ const About = () => {
                 <TitleInfoAboutMe>Skills</TitleInfoAboutMe>
                     <ContentIcons>
                         <FaCss3/> <FaReact/> <FaNodeJs/> <FaBootstrap/> <FaHtml5/> 
-                        <SiMongodb/> <SiMaterialUi/> <SiStyledComponents/> <SiJavascript/> 
+                        <SiMongodb/> <SiMaterialUi/> <SiGithub/> <SiStyledComponents/> <SiJavascript/> 
                     </ContentIcons>  
             </ContentAboutSkills>
         </ContentBox>

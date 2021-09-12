@@ -1,6 +1,6 @@
 import React from 'react'
 import "./contact.css"
-import {ContentBox, ContactContent, ContactTitle, ContactLabel, ContactTextBox, ContactButton, ContactTextArea,ContactSocialMedias, ContactContentSocial} from './styledContact'
+import {ContentBox, ContactContent, ContactTitle, ContactLabel, ContactTextBox, ContactButton, ContactTextArea} from './styledContact'
 
 const Contact = () => {
     return (
