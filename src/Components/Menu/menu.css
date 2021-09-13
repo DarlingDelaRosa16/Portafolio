@@ -4,6 +4,9 @@
     margin: 16px;
     font-size: 19px;
 }
+.navButton:hover{
+    cursor: pointer;
+}
 
 .navDropButton{
     text-decoration: none;

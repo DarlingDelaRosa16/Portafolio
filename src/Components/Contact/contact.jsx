@@ -4,7 +4,7 @@ import {ContentBox, ContactContent, ContactTitle, ContactLabel, ContactTextBox, 
 
 const Contact = () => {
     return (
-        <ContentBox >
+        <ContentBox id="contact">
                 <ContactContent >
                     <ContactTitle >Contact me</ContactTitle>
                     <form id="contactInformation">

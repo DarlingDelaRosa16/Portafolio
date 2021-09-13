@@ -3,10 +3,14 @@ import styled from 'styled-components'
 export const ContentBox = styled.div`
     width: 80%;
     margin-left:10%;
+    min-height: 657px;
+`;
+
+export const ContentProjects = styled.div`
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr) );
     grid-template-rows: auto;
-    min-height: 657px;
     @media (max-width: 399px){
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
     }

@@ -1,5 +1,5 @@
 import React from 'react'
-import {ContentBox, ProjectsCard, ProjectsImg, ProjectsInfo, ProjectsDescription, ProjectsTitle, ProjectsLink, TitleProjects} from './styledProjects'
+import {ContentProjects, ContentBox, ProjectsCard, ProjectsImg, ProjectsInfo, ProjectsDescription, ProjectsTitle, ProjectsLink, TitleProjects} from './styledProjects'
 import { dataProjects } from './dataProjects';
 import { BsDisplayFill } from "react-icons/bs";
 import { SiGithub } from "react-icons/si";
@@ -7,9 +7,9 @@ import { SiGithub } from "react-icons/si";
 
 const Projects = () => {
     return (
-        <>
-        <TitleProjects>Projects</TitleProjects>
-            <ContentBox>
+        <ContentBox id="projects">
+            <TitleProjects>Projects</TitleProjects>
+            <ContentProjects>
                 {
                     dataProjects.map(item =>(
                         <ProjectsCard>
@@ -23,8 +23,8 @@ const Projects = () => {
                         </ProjectsCard>
                     ))
                 }
-            </ContentBox>
-        </>
+            </ContentProjects>
+        </ContentBox>
     );
 }
  

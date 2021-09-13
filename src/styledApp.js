@@ -7,7 +7,7 @@ export const AppContent = styled.div`
 
 export const HeaderContent = styled.div`
     width: 100%;
-    background: blue;
+    background: #6495ED;
 `;
 
 export const InfoHeaderContent = styled.div`
@@ -19,14 +19,16 @@ export const InfoHeaderContent = styled.div`
     min-height: 566px;
 `;
 
+
 export const ImgContent = styled.div`
     grid-row: 2/3;
     grid-column: 1/2;
-    background-image: url("https://i.imgur.com/SFUXtXn.png");
+    background-image: url("https://i.imgur.com/c9mct83.jpg");
     background-repeat: no-repeat;
-    background-position: -50px -75px;
+    background-position: -30px -75px;
     border-radius: 5px;
     margin: 0px 5px 5px 0px;
+    border: 5px solid blue;
 `;
 
 export const InfoMainContent = styled.div`
@@ -67,4 +69,7 @@ export const TouchMe = styled.button`
     border: none;
     border-radius: 5px; 
     box-shadow: rgba(0, 0, 250, 0.4) 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.2) 0px -3px 0px inset;
+    &:hover{
+        cursor: pointer;
+    }
 `;

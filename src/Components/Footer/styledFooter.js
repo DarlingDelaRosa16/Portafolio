@@ -5,7 +5,7 @@ export const FooterContent = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
-    background-color: rgb(0,0,250, 0.6);
+    background-color: #6495ED;
 `;
 
 export const ContactContentSocial = styled.p`
@@ -16,7 +16,5 @@ export const ContactContentSocial = styled.p`
 export const ContactSocialMedias = styled.a`  
     color: black;
     text-decoration: none;
-    &:hover{
-        transform: scale(1.05, 1.05);
-    }
+    margin-inline: 8px;
 `;

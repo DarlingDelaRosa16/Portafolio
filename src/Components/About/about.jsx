@@ -6,7 +6,7 @@ import { SiStyledComponents, SiMongodb, SiJavascript, SiMaterialUi, SiGithub } f
 const About = () => {
 
     return (
-        <ContentBox>
+        <ContentBox id="about">
             <ContentInfoAboutMe>
                 <TitleInfoAboutMe>About Me</TitleInfoAboutMe>
                 <InfoAboutMe>My name is Darling Nomar De la Rosa Vanderhorst. Im a software development graduated from Intituto Tecnico Superior Comunitario (ITSC). I also study every day for impruve my skills and I try to use the most time posible for increase in this area. I try to be a better programmer than yesterday and that's one of my principal goals.</InfoAboutMe>

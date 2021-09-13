@@ -5,6 +5,7 @@ import About from './Components/About/about'
 import Projects from './Components/Projects/projects';
 import Contact from './Components/Contact/contact';
 import Footer from './Components/Footer/footer';
+import {Link} from 'react-scroll'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
                   <GreetingsContent>Hi, I'm</GreetingsContent>
                   <NameContent> Darling De la<br/>Rosa Vanderhorst</NameContent>
                   <CareerContent>Web Developer</CareerContent>
-                  <TouchMe>Touch me</TouchMe>
+                  <Link to="contact" smooth={true} duration={600}> <TouchMe>Touch me</TouchMe> </Link>
                </InfoMainContent>
            </InfoHeaderContent>
         </HeaderContent>

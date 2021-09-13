@@ -1,5 +1,6 @@
 import React from 'react'
 import "./menu.css"
+import {Link} from 'react-scroll'
 import {MenuBox, MenuLogo, MenuButton, MenuButtonDropDown, MenuBoxDropDown} from './styledMenu'
 
 const Menu = () => {
@@ -7,11 +8,11 @@ const Menu = () => {
         <>
             <MenuBox >
                     
-                    <MenuLogo >XD</MenuLogo>
+                    <MenuLogo>XD</MenuLogo>
                     
-                    <a className="navButton"  to="/">About me</a>
-                    <a className="navButton"  to="/projects">Projects</a>
-                    <a className="navButton"  to="/contact">Contact</a>
+                    <Link className="navButton"  to="about" smooth={true} duration={600}>About me</Link>
+                    <Link className="navButton"  to="projects" smooth={true} duration={600}>Projects</Link>
+                    <Link className="navButton"  to="contact" smooth={true} duration={600}>Contact</Link>
                     <a className="navButton"  to="/contact">Resume</a>
 
                     <MenuButton  display={"none"}>EN</MenuButton>
