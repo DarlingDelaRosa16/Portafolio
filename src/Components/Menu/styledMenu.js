@@ -90,6 +90,7 @@ export const MenuButton = styled.button`
     height: 20px;
     &:hover{
         cursor: pointer ;
+        color: #B22222;
     }
     @media (max-width: 760px){
         display: ${(props)=> props.display};

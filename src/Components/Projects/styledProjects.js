@@ -20,7 +20,7 @@ export const TitleProjects = styled.h3`
     grid-row: 1/2 ;
     font-family: 'Nanum Myeongjo', serif;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
 `;
 
 export const ProjectsCard = styled.div`
@@ -99,14 +99,6 @@ export const ProjectsLink = styled.button`
 
     &:hover{
         cursor: pointer;
-        animation-name: back-animation;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-    }
-
-    @keyframes back-animation {
-        0% { box-shadow: rgba(0, 250, 0, 0.4) 0px 2px 4px, rgba(0, 250, 0, 0.3) 0px 7px 13px -3px, rgba(0, 250, 0, 0.2) 0px -3px 0px inset; }
-        50% { box-shadow: rgba(250, 0, 0, 0.4) 0px 2px 4px, rgba(250, 0, 0, 0.3) 0px 7px 13px -3px, rgba(250, 0, 0, 0.2) 0px -3px 0px inset; }
-        100% { box-shadow: rgba(0, 0, 250, 0.4) 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.2) 0px -3px 0px inset; }
-    }
+        box-shadow: rgba(178, 34, 34, 0.7) 0px 2px 4px, rgba(178, 34, 34, 0.4) 0px 7px 13px -3px, rgba(178, 34, 34, 0.2) 0px -3px 0px inset; 
+   }
 `;

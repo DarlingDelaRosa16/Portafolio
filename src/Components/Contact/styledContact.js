@@ -30,7 +30,7 @@ export const ContactContent = styled.div`
 `;
 
 export const ContactTitle = styled.h1`
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Nanum Myeongjo', serif;
     width:100%;
     grid-row:1/2;
@@ -54,6 +54,12 @@ export const ContactTextBox = styled.input`
     border-radius: 5px;
     box-shadow: rgba(0, 0, 250, 0.4) 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.2) 0px -3px 0px inset;
     border: none;
+
+    &:focus{
+        outline:none;
+        box-shadow: rgba(178, 34, 34, 0.7) 0px 2px 4px, rgba(178, 34, 34, 0.4) 0px 7px 13px -3px, rgba(178, 34, 34, 0.2) 0px -3px 0px inset; 
+    }
+    
     @media (max-width: 690px){
         grid-column:1/3;
         margin: 0% 2% 2% 2%;
@@ -83,6 +89,12 @@ export const ContactTextArea = styled.textarea`
     border-radius: 5px;
     box-shadow: rgba(0, 0, 250, 0.4) 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.2) 0px -3px 0px inset;
     border: none;
+
+    &:focus{
+        outline:none;
+        box-shadow: rgba(178, 34, 34, 0.7) 0px 2px 4px, rgba(178, 34, 34, 0.4) 0px 7px 13px -3px, rgba(178, 34, 34, 0.2) 0px -3px 0px inset; 
+    }
+    
     @media (max-width: 690px){
         grid-column:1/3;
         grid-row: 7/8;
@@ -106,10 +118,12 @@ export const ContactButton = styled.button`
 
     &:hover{
         cursor: pointer;
-        animation-name: back-animation;
+        box-shadow: rgba(178, 34, 34, 0.7) 0px 2px 4px, rgba(178, 34, 34, 0.4) 0px 7px 13px -3px, rgba(178, 34, 34, 0.2) 0px -3px 0px inset; 
+       /* animation-name: back-animation;
         animation-duration: 3s;
-        animation-iteration-count: infinite;
+        animation-iteration-count: infinite; */
     }
+
     @keyframes back-animation {
         0% { box-shadow: rgba(0, 250, 0, 0.4) 0px 2px 4px, rgba(0, 250, 0, 0.3) 0px 7px 13px -3px, rgba(0, 250, 0, 0.2) 0px -3px 0px inset; }
         50% { box-shadow: rgba(250, 0, 0, 0.4) 0px 2px 4px, rgba(250, 0, 0, 0.3) 0px 7px 13px -3px, rgba(250, 0, 0, 0.2) 0px -3px 0px inset; }
