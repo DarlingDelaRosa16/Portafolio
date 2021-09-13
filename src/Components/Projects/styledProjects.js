@@ -14,6 +14,7 @@ export const ContentBox = styled.div`
 
 export const TitleProjects = styled.h3`
     grid-row: 1/2 ;
+    font-family: 'Nanum Myeongjo', serif;
     text-align: center;
     font-size: 25px;
 `;
@@ -67,6 +68,7 @@ export const ProjectsInfo = styled.p`
 
 export const ProjectsTitle = styled.h1`
     grid-row: 1/2;
+    font-family: 'Nanum Myeongjo', serif;
     margin: 5px;
     grid-column: 1/3;
     font-size: 20px;
@@ -75,6 +77,7 @@ export const ProjectsTitle = styled.h1`
 
 export const ProjectsDescription = styled.p`
     grid-row: 2/3;
+    font-family: 'Noto Serif', serif;
     margin-top: 0;
     grid-column: 1/3;
     font-size: 15px;

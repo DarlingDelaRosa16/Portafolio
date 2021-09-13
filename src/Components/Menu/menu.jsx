@@ -12,12 +12,13 @@ const Menu = () => {
                     <a className="navButton"  to="/">About me</a>
                     <a className="navButton"  to="/projects">Projects</a>
                     <a className="navButton"  to="/contact">Contact</a>
-    
+                    <a className="navButton"  to="/contact">Resume</a>
+
                     <MenuButton  display={"none"}>EN</MenuButton>
                     
                     <MenuButtonDropDown >HOLA</MenuButtonDropDown>
 
-                </MenuBox>
+            </MenuBox>
 
                 <MenuBoxDropDown >
 

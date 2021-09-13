@@ -20,6 +20,7 @@ export const ContentInfoAboutMe = styled.div`
 
 export const TitleInfoAboutMe = styled.h3`
     grid-row: 1/2 ;
+    font-family: 'Nanum Myeongjo', serif;
     text-align: center;
     font-size: 30px;
     margin:0;
@@ -27,9 +28,10 @@ export const TitleInfoAboutMe = styled.h3`
 
 export const InfoAboutMe = styled.p`
     margin:0;
+    font-family: 'Noto Serif', serif;
     grid-row: 2/3;
     text-align: justify;
-    font-size: 23px;
+    font-size: 22px;
 `;
 
 export const ContentAboutSkills = styled(ContentInfoAboutMe)`

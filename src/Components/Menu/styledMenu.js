@@ -2,7 +2,9 @@ import styled from 'styled-components'
 
 export const MenuBox = styled.div`
     display: grid;
+    font-family: 'Nanum Myeongjo', serif;
     grid-column:1/3 ;
+    color: white;
     grid-row: 1/2;
     width: 92%;
     height: 90px;
@@ -56,10 +58,9 @@ export const MenuBoxDropDown = styled.div`
 `;
 
 export const MenuLogo = styled.h1`
-    color: black;
+    color: white;
     display: inline;
     grid-row:2/3;
-    font-family: helvetica;
     font-size: 21px;
     height: 30px;
     margin-top: 10px;   
@@ -77,7 +78,8 @@ export const MenuLogo = styled.h1`
 
 
 export const MenuButton = styled.button`
-    color: ${(props)=> props.generalTheme};
+    color: white;
+    font-family: 'Nanum Myeongjo', serif;
     width: auto;
     font-size: 15px;
     margin-top: 10px;

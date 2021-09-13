@@ -29,9 +29,9 @@ export const ContactContent = styled.div`
     }   
 `;
 
-
 export const ContactTitle = styled.h1`
     font-size: 25px;
+    font-family: 'Nanum Myeongjo', serif;
     width:100%;
     grid-row:1/2;
     text-align:center;
@@ -44,6 +44,7 @@ export const ContactTitle = styled.h1`
 `;
 
 export const ContactTextBox = styled.input`
+    font-family: 'Noto Serif', serif;
     grid-column:${(props)=> props.gridColumn} ;
     grid-row:${(props)=> props.gridRow} ;
     font-size:20px;
@@ -61,6 +62,7 @@ export const ContactTextBox = styled.input`
 
 export const ContactLabel = styled.label`
     font-size: 20px;
+    font-family: 'Nanum Myeongjo', serif;
     grid-column:${(props)=> props.gridColumn} ;
     grid-row:${(props)=> props.gridRow} ;
     
@@ -72,6 +74,7 @@ export const ContactLabel = styled.label`
 
 export const ContactTextArea = styled.textarea`
     grid-column: 2/3;
+    font-family: 'Noto Serif', serif;
     font-size:20px;
     grid-row: 2/5;
     width: 100%;
@@ -91,10 +94,10 @@ export const ContactTextArea = styled.textarea`
 
 export const ContactButton = styled.button` 
     width: 130px;
+    font-family: 'Nanum Myeongjo', serif;
     font-size: 20px;
     background: none;
     border: none;
-    text-decoration: none;
     border-radius: 5px; 
     grid-column:1/2;
     grid-row :5/6;

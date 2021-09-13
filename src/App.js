@@ -1,4 +1,4 @@
-import {AppContent, HeaderContent, ImgContent, WhoAmICotent, InfoHeaderContent} from './styledApp';
+import {AppContent, HeaderContent, TouchMe, ImgContent, InfoMainContent, GreetingsContent, NameContent, InfoHeaderContent, CareerContent} from './styledApp';
 import React from 'react';
 import Menu from './Components/Menu/menu';
 import About from './Components/About/about'
@@ -13,7 +13,12 @@ function App() {
          <Menu/>
            <InfoHeaderContent>               
                <ImgContent/>
-               <WhoAmICotent>Hi, I am Darling <br/>De la Rosa Vanderhorst</WhoAmICotent>
+               <InfoMainContent>
+                  <GreetingsContent>Hi, I'm</GreetingsContent>
+                  <NameContent> Darling De la<br/>Rosa Vanderhorst</NameContent>
+                  <CareerContent>Web Developer</CareerContent>
+                  <TouchMe>Touch me</TouchMe>
+               </InfoMainContent>
            </InfoHeaderContent>
         </HeaderContent>
         <About/>
