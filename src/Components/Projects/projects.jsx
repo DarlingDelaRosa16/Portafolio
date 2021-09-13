@@ -17,8 +17,8 @@ const Projects = () => {
                             <ProjectsInfo>
                                 <ProjectsTitle>{item.name}</ProjectsTitle>
                                 <ProjectsDescription >{item.description}</ProjectsDescription>
-                                <ProjectsLink column={"1/2"}>Live <BsDisplayFill/> </ProjectsLink>
-                                <ProjectsLink column={"2/3"}>GitHub <SiGithub/></ProjectsLink>
+                                <ProjectsLink href={item.urlLive} target="_blank" column={"1/2"}>Live <BsDisplayFill/> </ProjectsLink>
+                                <ProjectsLink href={item.urlGithub} target="_blank" column={"2/3"}>GitHub <SiGithub/></ProjectsLink>
                             </ProjectsInfo>
                         </ProjectsCard>
                     ))

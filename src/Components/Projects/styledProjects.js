@@ -60,8 +60,7 @@ export const ProjectsInfo = styled.p`
     grid-template-columns: 1fr 1fr;
     border-radius: 0px 5px 5px 0px;
     margin: 2px 2px 7px 5px;
-    color: ${(props)=> props.generalTheme};
-    background:linear-gradient(#ddd,rgb(218, 220, 221), #ffffff) ;
+    
     @media (max-width: 426px){
         margin:0;
         border-radius: 0 0 5px 5px ;
@@ -88,12 +87,17 @@ export const ProjectsDescription = styled.p`
     text-align:center;
 `;
 
-export const ProjectsLink = styled.button`
-    color:  "black";
+export const ProjectsLink = styled.a`
+    align-items: center;
+    font-family: 'Nanum Myeongjo', serif;
+    text-align:center;
+    padding-top: 5px;
     grid-column: ${(props)=> props.column};
     margin: 5px;
     border: none;
     background: none;
+    text-decoration: none;
+    color: black;
     grid-row: 3/4;
     box-shadow: rgba(0, 0, 250, 0.4) 0px 2px 4px, rgba(0, 0, 250, 0.1) 0px 7px 13px -3px, rgba(0, 0, 250, 0.1) 0px -3px 0px inset;
 
