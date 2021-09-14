@@ -28,7 +28,7 @@ export const ImgContent = styled.div`
     background-position: -30px -75px;
     border-radius: 5px;
     margin: 0px 5px 5px 0px;
-    border: 5px solid blue;
+    border: 2px solid blue;
 `;
 
 export const InfoMainContent = styled.div`
