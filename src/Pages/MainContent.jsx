@@ -9,7 +9,7 @@ import {Link} from 'react-scroll'
 import LanguageContext from '../Context/languageContext'
 
 const MainContent = () => {
-    const [setLanguage, language] = useContext(LanguageContext)
+    const [/*setLanguage*/, language] = useContext(LanguageContext)
 
     if(language === "EN"){
         return (

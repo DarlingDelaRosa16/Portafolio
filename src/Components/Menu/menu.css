@@ -3,6 +3,7 @@
     text-decoration: none;
     margin: 16px;
     font-size: 19px;
+    color: white;
 }
 .navButton:hover{
     cursor: pointer;
@@ -13,6 +14,7 @@
     font-family: 'Nanum Myeongjo', serif;
     text-decoration: none;
     margin: 16px;
+    color: black;
     font-size: 19px;
     grid-column: 1/3;
     text-align: center;

@@ -1,5 +1,6 @@
 import React, {useContext, useState} from 'react'
 import "./menu.css"
+import MyResume from '../../Resume/Myresume.pdf'
 import { FiMenu } from "react-icons/fi";
 import LanguageContext from '../../Context/languageContext'
 import {Link} from 'react-scroll'
@@ -37,7 +38,7 @@ const Menu = () => {
                         <Link className="navButton"  to="about" smooth={true} duration={600}>About me</Link>
                         <Link className="navButton"  to="projects" smooth={true} duration={800}>Projects</Link>
                         <Link className="navButton"  to="contact" smooth={true} duration={1000}>Contact</Link>
-                        <a className="navButton"  to="/contact">Resume</a>
+                        <a className="navButton" target="_blank" rel="noreferrer" href={MyResume}>Resume</a>
     
                         <MenuButton onClick={toggleLanguage} display={"none"}>{language}</MenuButton>
                         
@@ -50,7 +51,7 @@ const Menu = () => {
                         <Link className="navDropButton" onClick={toggleMenu} to="about" smooth={true} duration={600}>About me</Link>
                         <Link className="navDropButton" onClick={toggleMenu} to="projects" smooth={true} duration={800}>Projects</Link>
                         <Link className="navDropButton" onClick={toggleMenu} to="contact" smooth={true} duration={1000}>Contact</Link>
-                        <a className="navDropButton" onClick={toggleMenu} to="/contact">Resume</a>
+                        <a className="navDropButton" onClick={toggleMenu} target="_blank" rel="noreferrer"  href={MyResume}>Resume</a>
                     
                         <MenuButton onClick={toggleLanguage}>{language}</MenuButton>
     
@@ -67,7 +68,7 @@ const Menu = () => {
                         <Link className="navButton"  to="about" smooth={true} duration={600}>Sobre Mi</Link>
                         <Link className="navButton"  to="projects" smooth={true} duration={800}>Proyectos</Link>
                         <Link className="navButton"  to="contact" smooth={true} duration={1000}>Contacto</Link>
-                        <a className="navButton"  to="/contact">Curriculum</a>
+                        <a className="navButton" target="_blank" rel="noreferrer" href={MyResume}>Curriculum</a>
     
                         <MenuButton onClick={toggleLanguage} display={"none"}>{language}</MenuButton>
                         
@@ -80,7 +81,7 @@ const Menu = () => {
                         <Link className="navDropButton" onClick={toggleMenu} to="about" smooth={true} duration={600}>Sobre Mi</Link>
                         <Link className="navDropButton" onClick={toggleMenu} to="projects" smooth={true} duration={800}>Proyectos</Link>
                         <Link className="navDropButton" onClick={toggleMenu} to="contact" smooth={true} duration={1000}>Contacto</Link>
-                        <a className="navDropButton" onClick={toggleMenu} to="/contact">Curriculum</a>
+                        <a className="navDropButton" onClick={toggleMenu} target="_blank" rel="noreferrer" href={MyResume}>Curriculum</a>
                     
                         <MenuButton onClick={toggleLanguage}>{language}</MenuButton>
     

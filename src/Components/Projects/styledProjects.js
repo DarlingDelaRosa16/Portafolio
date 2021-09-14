@@ -66,7 +66,7 @@ export const ProjectsImg = styled.div`
     }
 `;
 
-export const ProjectsInfo = styled.p`
+export const ProjectsInfo = styled.div`
     grid-column:5/8 ;
     display: grid;
     grid-template-rows: auto auto 40px;

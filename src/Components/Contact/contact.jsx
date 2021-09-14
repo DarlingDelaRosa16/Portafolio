@@ -5,7 +5,7 @@ import {ContentBox, ContactContent, ContactTitle, ContactLabel, ContactTextBox, 
 
 const Contact = () => {
 
-    const [setLanguage, language] = useContext(LanguageContext)
+    const [/*setLanguage*/, language] = useContext(LanguageContext)
 
     if(language === "EN"){
         return (

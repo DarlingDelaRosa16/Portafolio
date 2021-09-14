@@ -6,7 +6,7 @@ import { SiStyledComponents, SiMongodb, SiJavascript, SiMaterialUi, SiGithub } f
 
 const About = () => {
 
-    const [setLanguage, language] = useContext(LanguageContext)
+    const [/*setLanguage*/, language] = useContext(LanguageContext)
 
     if(language === "EN"){
         return (

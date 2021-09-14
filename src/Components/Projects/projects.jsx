@@ -8,7 +8,7 @@ import LanguageContext from '../../Context/languageContext'
 
 const Projects = () => {
 
-    const [setLanguage, language] = useContext(LanguageContext)
+    const [/*setLanguage*/, language] = useContext(LanguageContext)
     if(language === "EN"){
         return (
             <ContentBox id="projects">
@@ -16,7 +16,7 @@ const Projects = () => {
                 <ContentProjects>
                     {
                         dataProjects.map(item =>(
-                            <ProjectsCard>
+                            <ProjectsCard key={item.id}>
                                 <ProjectsImg url={item.img}/>
                                 <ProjectsInfo>
                                     <ProjectsTitle>{item.name}</ProjectsTitle>
@@ -37,7 +37,7 @@ const Projects = () => {
                 <ContentProjects>
                     {
                         informacionDeProyectos.map(item =>(
-                            <ProjectsCard>
+                            <ProjectsCard key={item.id}>
                                 <ProjectsImg url={item.img}/>
                                 <ProjectsInfo>
                                     <ProjectsTitle>{item.name}</ProjectsTitle>
