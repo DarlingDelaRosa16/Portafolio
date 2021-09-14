@@ -2,7 +2,7 @@ export const dataProjects = [
     {
         id: 1,
         name: "Comunity app",
-        description: "This aplication was create whit React.js (Hooks), Node.js (Express) and is conect to a data base in MongoDB Atlas. The aplication is for create and read news from diferent comunities and topics, the porpuse was only practice.",
+        description: "This aplication was create whit React.js (Hooks), Node.js (Express) and is conect to a data base in MongoDB Atlas. The aplication is for create and read news from diferent comunities and topics.",
         img: "https://i.imgur.com/fTrIywz.jpg",
         urlLive: "https://comunity-app.netlify.app",
         urlGithub: "https://github.com/DarlingDelaRosa16/Comunity-News"
@@ -38,7 +38,7 @@ export const informacionDeProyectos = [
     {
         id: 1,
         name: "Comunity app",
-        description: "Esta aplicacion fue creada con React.js (Hooks), Node.js (Express) esta conectada a una base de datos de MongoDB Atlas. La aplicacion es para crear y leer noticias de diferentes comunidades, El proposito fue unicamente practica.",
+        description: "Esta aplicacion fue creada con React.js (Hooks), Node.js (Express) esta conectada a una base de datos de MongoDB Atlas. La aplicacion es para crear y leer noticias de diferentes comunidades.",
         img: "https://i.imgur.com/fTrIywz.jpg",
         urlLive: "https://comunity-app.netlify.app",
         urlGithub: "https://github.com/DarlingDelaRosa16/Comunity-News"

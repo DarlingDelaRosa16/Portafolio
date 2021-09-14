@@ -3,24 +3,18 @@ import styled from 'styled-components'
 export const MenuBox = styled.div`
     display: grid;
     font-family: 'Nanum Myeongjo', serif;
-    grid-column:1/3 ;
+    grid-column:1/3;
     color: white;
     grid-row: 1/2;
     width: 92%;
     height: 90px;
     grid-template-rows: 40px 50px;
-    grid-template-columns: 1fr auto auto auto auto;
+    grid-template-columns: 1fr auto;
     margin-inline: 4%;
-   
-    @media screen and (max-width: 1220px){
-        grid-template-columns: 1fr auto auto auto auto auto 50px ;
+    @media (max-width: 388px){
+        height: 60px;
+        grid-template-rows: 20px 40px;
     }
-    @media (max-width: 920px){
-        grid-template-columns: 1fr auto auto auto auto auto 20px ;
-    }  
-    @media (max-width: 880px){
-        grid-template-columns: 1fr auto auto auto auto auto 5px ;
-    }  
 `;
 
 export const MenuButtonDropDown = styled.button`
@@ -43,15 +37,17 @@ export const MenuButtonDropDown = styled.button`
 
 export const MenuBoxDropDown = styled.div`
     visibility: ${(props)=> props.see ? "visible" : "hidden"};
-    width: 300px;
+    width: 200px;
     position: absolute;
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto;
     z-index: 1;
-    right: -1px;
+    right: 3px;
+    border-radius: 5px;
     margin-top: -3px;
-    border: 1px solid black;
-    background: ${(props)=> props.generalTheme !== "white" ? "linear-gradient(white, rgb(218, 220, 221))" : "linear-gradient(gray, black)" } ;
+    background: white;
+    box-shadow: rgba(0, 0, 250, 0.4) 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.3) 0px -3px 0px inset;
+
     @media (min-width: 760px){
         display: none;
     }
@@ -65,17 +61,7 @@ export const MenuLogo = styled.h1`
     height: 30px;
     margin-top: 10px;   
 
-    @media (max-width: 1220px){
-        margin-left: 50px;
-    }
-    @media (max-width: 920px){
-        margin-left: 20px;
-    }
-    @media (max-width: 388px){
-        grid-row:1/3;
-    }
 `;
-
 
 export const MenuButton = styled.button`
     color: white;
@@ -94,8 +80,11 @@ export const MenuButton = styled.button`
     }
     @media (max-width: 760px){
         display: ${(props)=> props.display};
-        grid-row: 4/5;
+        grid-row: 5/6;
+        text-align:center;
+        grid-column: 1/3;
         margin-bottom: 10px;
+        color:black;
     }
     
 `;

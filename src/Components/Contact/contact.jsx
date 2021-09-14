@@ -13,11 +13,11 @@ const Contact = () => {
                     <ContactContent >
                         <ContactTitle >Contact me</ContactTitle>
                         <form id="contactInformation">
-                            <ContactLabel gridColumn={"1/2"} gridRow={"1/2"}>Name</ContactLabel>
-                            <ContactTextBox gridColumn={"1/2"} gridRow={"2/3"} />
-                            <ContactLabel gridColumn={"1/2"} gridRow={"3/4"}>Email</ContactLabel>
-                            <ContactTextBox gridColumn={"1/2"} gridRow={"4/5"}/>
-                            <ContactLabel gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"5/6"} >Message</ContactLabel>
+                            <ContactLabel gridColumn={"1/2"} >Name</ContactLabel>
+                            <ContactTextBox gridColumn={"1/2"}  />
+                            <ContactLabel gridColumn={"1/2"} >Email</ContactLabel>
+                            <ContactTextBox gridColumn={"1/2"} />
+                            <ContactLabel gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"auto"} >Message</ContactLabel>
                             <ContactTextArea id="contactArea"/>
                             <ContactButton>Send</ContactButton>                        
                         </form>
@@ -30,11 +30,11 @@ const Contact = () => {
                     <ContactContent >
                         <ContactTitle >Contactame</ContactTitle>
                         <form id="contactInformation">
-                            <ContactLabel gridColumn={"1/2"} gridRow={"1/2"}>Nombre</ContactLabel>
-                            <ContactTextBox gridColumn={"1/2"} gridRow={"2/3"} />
-                            <ContactLabel gridColumn={"1/2"} gridRow={"3/4"}>Correo Electronico</ContactLabel>
-                            <ContactTextBox gridColumn={"1/2"} gridRow={"4/5"}/>
-                            <ContactLabel gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"5/6"} >Mensaje</ContactLabel>
+                            <ContactLabel gridColumn={"1/2"} >Nombre</ContactLabel>
+                            <ContactTextBox gridColumn={"1/2"}  />
+                            <ContactLabel gridColumn={"1/2"} >Correo Electronico</ContactLabel>
+                            <ContactTextBox gridColumn={"1/2"} />
+                            <ContactLabel gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"auto"} >Mensaje</ContactLabel>
                             <ContactTextArea id="contactArea"/>
                             <ContactButton>Enviar</ContactButton>                        
                         </form>

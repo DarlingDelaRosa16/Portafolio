@@ -20,7 +20,7 @@ const MainContent = () => {
                     <ImgContent/>
                     <InfoMainContent>
                         <GreetingsContent>Hi, I'm</GreetingsContent>
-                        <NameContent> Darling De la<br/>Rosa Vanderhorst.</NameContent>
+                        <NameContent> Darling De la Rosa Vanderhorst.</NameContent>
                         <CareerContent>Web Developer</CareerContent>
                         <Link to="contact" smooth={true} duration={1000}> <TouchMe>Get in Touch</TouchMe> </Link>
                     </InfoMainContent>
@@ -41,7 +41,7 @@ const MainContent = () => {
                     <ImgContent/>
                     <InfoMainContent>
                         <GreetingsContent>Hola, soy</GreetingsContent>
-                        <NameContent> Darling De la<br/>Rosa Vanderhorst.</NameContent>
+                        <NameContent> Darling De la Rosa Vanderhorst.</NameContent>
                         <CareerContent>Desarrollador Web</CareerContent>
                         <Link to="contact" smooth={true} duration={1000}> <TouchMe>Contactame</TouchMe> </Link>
                     </InfoMainContent>

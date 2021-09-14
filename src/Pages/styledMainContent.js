@@ -17,6 +17,11 @@ export const InfoHeaderContent = styled.div`
     grid-template-rows: 1px 566px;
     grid-template-columns: 35% 65%;
     min-height: 566px;
+
+    @media (max-width: 700px){
+        width: 94%;
+        margin-inline: 3%;
+    }
 `;
 
 
@@ -29,14 +34,28 @@ export const ImgContent = styled.div`
     border-radius: 5px;
     margin: 0px 5px 5px 0px;
     border: 2px solid blue;
+
+    @media (max-width: 1100px){
+        display: none;
+        margin: 0;
+    }
 `;
 
 export const InfoMainContent = styled.div`
     grid-row: 2/3;
     grid-column: 2/3;
     display: grid;
-    grid-template-rows: 50px 170px 60px 80px;
+    height: 360px;
+    grid-template-rows: auto;
     margin: 50px 0px 0px 50px;
+
+    @media (max-width: 1100px){
+        grid-column: 1/3;
+    }
+    @media (max-width: 610px){
+        margin: 50px 0px 0px 0px;
+    }
+    
 `;
 
 
@@ -46,16 +65,38 @@ export const NameContent = styled.h1`
     margin:0;
     font-family: 'Nanum Myeongjo', serif;
     color: white;
+    @media (max-width: 610px){
+        font-size: 60px;
+    }
+    @media (max-width: 352px){
+        font-size: 50px;
+    }
+    @media (max-width: 290px){
+        font-size: 45px;
+    }
 `;
 
 export const GreetingsContent = styled(NameContent)`
     font-size: 40px;
     grid-row: 1/2;
+    @media (max-width: 610px){
+        font-size: 30px;
+    }
+    @media (max-width: 352px){
+        font-size: 25px;
+    }
 `;
 
 export const CareerContent = styled(NameContent)`
     font-size: 50px;
     grid-row: 3/4;
+    @media (max-width: 610px){
+        font-size: 40px;
+    }
+    @media (max-width: 352px){
+        font-size: 30px;
+    }
+    
 `;
 
 export const TouchMe = styled.button`

@@ -1,5 +1,6 @@
-import React, {useContext} from 'react'
+import React, {useContext, useState} from 'react'
 import "./menu.css"
+import { FiMenu } from "react-icons/fi";
 import LanguageContext from '../../Context/languageContext'
 import {Link} from 'react-scroll'
 import {MenuBox, MenuLogo, MenuButton, MenuButtonDropDown, MenuBoxDropDown} from './styledMenu'
@@ -7,8 +8,10 @@ import {MenuBox, MenuLogo, MenuButton, MenuButtonDropDown, MenuBoxDropDown} from
 const Menu = () => {
 
     const [setLanguage, language] = useContext(LanguageContext)
+    const [onOpen, setOnOpen] = useState(false)
 
     const toggleLanguage = ()=>{
+        setOnOpen(false)
         if(language === "EN"){
             setLanguage("ES")
             localStorage.setItem("language", "ES")
@@ -18,6 +21,11 @@ const Menu = () => {
         }
         
     }
+
+    const toggleMenu = ()=>{
+        if(onOpen === false)setOnOpen(true)
+        else setOnOpen(false)
+    } 
 
     if(language ==="EN"){
         return (
@@ -33,16 +41,16 @@ const Menu = () => {
     
                         <MenuButton onClick={toggleLanguage} display={"none"}>{language}</MenuButton>
                         
-                        <MenuButtonDropDown >HOLA</MenuButtonDropDown>
+                        <MenuButtonDropDown onClick={toggleMenu}><FiMenu/></MenuButtonDropDown>
     
                 </MenuBox>
     
-                    <MenuBoxDropDown >
+                    <MenuBoxDropDown see={onOpen} >
     
-                        <Link className="navButton"  to="about" smooth={true} duration={600}>About me</Link>
-                        <Link className="navButton"  to="projects" smooth={true} duration={800}>Projects</Link>
-                        <Link className="navButton"  to="contact" smooth={true} duration={1000}>Contact</Link>
-                        <a className="navButton"  to="/contact">Resume</a>
+                        <Link className="navDropButton" onClick={toggleMenu} to="about" smooth={true} duration={600}>About me</Link>
+                        <Link className="navDropButton" onClick={toggleMenu} to="projects" smooth={true} duration={800}>Projects</Link>
+                        <Link className="navDropButton" onClick={toggleMenu} to="contact" smooth={true} duration={1000}>Contact</Link>
+                        <a className="navDropButton" onClick={toggleMenu} to="/contact">Resume</a>
                     
                         <MenuButton onClick={toggleLanguage}>{language}</MenuButton>
     
@@ -63,16 +71,16 @@ const Menu = () => {
     
                         <MenuButton onClick={toggleLanguage} display={"none"}>{language}</MenuButton>
                         
-                        <MenuButtonDropDown >HOLA</MenuButtonDropDown>
+                        <MenuButtonDropDown onClick={toggleMenu}><FiMenu/></MenuButtonDropDown>
     
                 </MenuBox>
     
-                    <MenuBoxDropDown >
+                    <MenuBoxDropDown see={onOpen} >
     
-                        <Link className="navButton"  to="about" smooth={true} duration={600}>Sobre Mi</Link>
-                        <Link className="navButton"  to="projects" smooth={true} duration={800}>Proyectos</Link>
-                        <Link className="navButton"  to="contact" smooth={true} duration={1000}>Contacto</Link>
-                        <a className="navButton"  to="/contact">Curriculum</a>
+                        <Link className="navDropButton" onClick={toggleMenu} to="about" smooth={true} duration={600}>Sobre Mi</Link>
+                        <Link className="navDropButton" onClick={toggleMenu} to="projects" smooth={true} duration={800}>Proyectos</Link>
+                        <Link className="navDropButton" onClick={toggleMenu} to="contact" smooth={true} duration={1000}>Contacto</Link>
+                        <a className="navDropButton" onClick={toggleMenu} to="/contact">Curriculum</a>
                     
                         <MenuButton onClick={toggleLanguage}>{language}</MenuButton>
     
