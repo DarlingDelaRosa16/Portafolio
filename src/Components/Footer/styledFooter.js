@@ -20,4 +20,7 @@ export const ContactSocialMedias = styled.a`
     color: black;
     text-decoration: none;
     margin-inline: 8px;
+    &:hover{
+        color: #B22222 ;
+    }
 `;
