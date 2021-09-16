@@ -32,7 +32,7 @@ const Contact = () => {
                         <form id="contactInformation">
                             <ContactLabel gridColumn={"1/2"} >Nombre</ContactLabel>
                             <ContactTextBox gridColumn={"1/2"}  />
-                            <ContactLabel gridColumn={"1/2"} >Correo Electronico</ContactLabel>
+                            <ContactLabel gridColumn={"1/2"} >Email</ContactLabel>
                             <ContactTextBox gridColumn={"1/2"} />
                             <ContactLabel gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"auto"} >Mensaje</ContactLabel>
                             <ContactTextArea id="contactArea"/>
