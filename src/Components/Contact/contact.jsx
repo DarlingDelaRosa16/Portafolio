@@ -26,10 +26,10 @@ const Contact = () => {
         );
     }else{
         return (
-            <ContentBox id="contact">
+            <ContentBox id="contact" >
                     <ContactContent >
                         <ContactTitle >Contactame</ContactTitle>
-                        <form id="contactInformation">
+                        <form name="Contact" id="contactInformation" netlify>
                             <ContactLabel gridColumn={"1/2"} >Nombre</ContactLabel>
                             <ContactTextBox gridColumn={"1/2"}  />
                             <ContactLabel gridColumn={"1/2"} >Email</ContactLabel>

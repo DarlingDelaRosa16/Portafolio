@@ -3,30 +3,20 @@ import styled from 'styled-components'
 export const ContentBox = styled.div`
     width: 80%;
     margin-inline:10%;
-    margin-top:153.5px;
-    margin-bottom: 153.5px;
-    height: 350px;
+    height: 657px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     @media (max-width: 1178px){
         width: 90%;
         margin-inline:5%;
     }
     @media (max-width: 700px){
-        height:450px;
         width: 94%;
         margin-inline: 3%;
-        margin-top: 103.5px ;
-        margin-bottom: 103.5px;
     }
-    @media (max-width: 420px){
-        height:500px;
-        margin-top:78.5px; 
-        margin-bottom: 78.5px;      
-    }
-    @media (max-width: 300px){
-        height:550px;
-        margin-top: 53.53.px;
-        margin-bottom: 53.5px;
-    }
+    
 `;
 
 export const ContentAboutAndSkill = styled.div`
@@ -35,12 +25,6 @@ export const ContentAboutAndSkill = styled.div`
     height:350px;
     @media (max-width: 700px){
         height:450px;
-    }
-    @media (max-width: 420px){
-        height:500px;
-    }
-    @media (max-width: 300px){
-        height:550px;
     }
 `; 
 
