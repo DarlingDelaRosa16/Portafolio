@@ -38,7 +38,7 @@ const Contact = () => {
             <ContentBox id="contact" >
                     <ContactContent >
                         <ContactTitle >Contactame</ContactTitle>
-                        <form name="contact" id="contactInformation" method="POST" data-netlify="true">
+                        <form name="contact" action="/" id="contactInformation" method="POST" data-netlify="true">
                             
                             <input type="hidden" name="form-name" value="contact" />
 
