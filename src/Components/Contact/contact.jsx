@@ -14,6 +14,8 @@ const Contact = () => {
                         <ContactTitle >Contact me</ContactTitle>
                         <form name="contact" id="contactInformation" method="POST" data-netlify="true">
                             
+                            <input type="hidden" name="form-name" value="contact" />
+
                             <ContactLabel htmlFor="name" gridColumn={"1/2"} >Name</ContactLabel>
                             <ContactTextBox name="name" gridColumn={"1/2"}  />
                             
@@ -35,6 +37,8 @@ const Contact = () => {
                         <ContactTitle >Contactame</ContactTitle>
                         <form name="contact" id="contactInformation" method="POST" data-netlify="true">
                             
+                            <input type="hidden" name="form-name" value="contact" />
+
                             <ContactLabel htmlFor="name" gridColumn={"1/2"} >Nombre</ContactLabel>
                             <ContactTextBox name="name" type="text" gridColumn={"1/2"}  />
 
