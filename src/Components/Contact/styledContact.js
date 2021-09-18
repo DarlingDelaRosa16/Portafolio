@@ -31,7 +31,8 @@ export const ContactContent = styled.div`
 
 export const ContactTitle = styled.h3`
     font-size: 30px;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     width:100%;
     grid-row:auto;
     text-align:center;
@@ -42,9 +43,10 @@ export const ContactTitle = styled.h3`
 `;
 
 export const ContactTextBox = styled.input`
-    font-family: 'Noto Serif', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
     grid-column:${(props)=> props.gridColumn} ;
-    font-size:20px;
+    font-size:19px;
     width: 95%;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -63,7 +65,8 @@ export const ContactTextBox = styled.input`
 
 export const ContactLabel = styled.label`
     font-size: 20px;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     grid-column:${(props)=> props.gridColumn} ;
     grid-row:${(props)=> props.gridRow} ;
 
@@ -75,7 +78,8 @@ export const ContactLabel = styled.label`
 
 export const ContactTextArea = styled.textarea`
     grid-column: 2/3;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
     font-size:20px;
     grid-row: 2/5;
     width: 95%;
@@ -99,7 +103,8 @@ export const ContactTextArea = styled.textarea`
 
 export const ContactButton = styled.button` 
     width: 130px;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 20px;
     background: none;
     border: none;

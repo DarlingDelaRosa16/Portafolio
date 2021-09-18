@@ -28,7 +28,8 @@ export const ContentProjects = styled.div`
 export const TitleProjects = styled.h3`
     grid-row: auto;
     margin-top: 0;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     text-align: center;
     font-size: 30px;
     @media (max-width: 420px){
@@ -84,7 +85,8 @@ export const ProjectsInfo = styled.div`
 
 export const ProjectsTitle = styled.h1`
     grid-row: 1/2;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     margin: 0;
     grid-column: 1/3;
     font-size: 20px;
@@ -93,7 +95,8 @@ export const ProjectsTitle = styled.h1`
 
 export const ProjectsDescription = styled.p`
     grid-row: 2/3;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
     margin: 0;
     grid-column: 1/3;
     font-size: 15px;
@@ -105,7 +108,8 @@ export const ProjectsDescription = styled.p`
 
 export const ProjectsLink = styled.a`
     align-items: center;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
     text-align:center;
     font-size: 14px;
     padding-top: 5px;

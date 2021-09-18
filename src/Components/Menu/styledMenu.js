@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const MenuBox = styled.div`
     display: grid;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     grid-column:1/3;
     color: white;
     grid-row: 1/2;

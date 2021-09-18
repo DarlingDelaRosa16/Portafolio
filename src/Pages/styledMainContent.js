@@ -63,7 +63,8 @@ export const NameContent = styled.h1`
     font-size: 70px;
     grid-row: 2/3;
     margin:0;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     color: white;
     @media (max-width: 610px){
         font-size: 60px;
@@ -100,11 +101,12 @@ export const CareerContent = styled(NameContent)`
 `;
 
 export const TouchMe = styled.button`
-    width: 130px;
+    width: 140px;
     height: 40px;
     color: white;
     margin-top: 20px;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
     font-size: 20px;
     background: black;
     border: none;

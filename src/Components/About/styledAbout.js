@@ -12,10 +12,6 @@ export const ContentBox = styled.div`
         width: 90%;
         margin-inline:5%;
     }
-    @media (max-width: 700px){
-        width: 94%;
-        margin-inline: 3%;
-    }
     
 `;
 
@@ -37,7 +33,8 @@ export const ContentInfoAboutMe = styled.div`
 
 export const TitleInfoAboutMe = styled.h3`
     grid-row: auto;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     text-align: center;
     font-size: 30px;
     margin:0;
@@ -48,7 +45,8 @@ export const TitleInfoAboutMe = styled.h3`
 
 export const InfoAboutMe = styled.p`
     margin:0;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
     grid-row: auto;
     text-align: justify;
     font-size: 22px;
