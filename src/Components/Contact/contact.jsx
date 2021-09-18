@@ -15,20 +15,17 @@ const Contact = () => {
                         <form name="contact" id="contactInformation" action="/" method="POST" data-netlify="true">
                             
                             <input type="hidden" name="contact" value="contact" />
-                            <input type="text" name="name" />
-                            <input type="text" name="email" />
-                            <input type="text" name="message" />
-                            <button type="submit">send</button>
-                            {/* <ContactLabel htmlFor="name" gridColumn={"1/2"} >Name</ContactLabel>
+                            
+                            <ContactLabel htmlFor="name" gridColumn={"1/2"} >Name</ContactLabel>
                             <ContactTextBox name="name" gridColumn={"1/2"}  />
                             
                             <ContactLabel htmlFor="email" gridColumn={"1/2"} >Email</ContactLabel>
                             <ContactTextBox name="email" gridColumn={"1/2"} />
 
                             <ContactLabel htmlFor="message" gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"auto"} >Message</ContactLabel>
-                            <ContactTextArea name="message" id="contactArea"/> */}
+                            <ContactTextArea name="message" id="contactArea"/>
 
-                            {/* <ContactButton type="submit" >Send</ContactButton>                         */}
+                            <ContactButton type="submit" >Send</ContactButton>                        
                         </form>
                     </ContactContent>
                 </ContentBox>
