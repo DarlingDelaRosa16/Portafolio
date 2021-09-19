@@ -29,17 +29,19 @@ const About = () => {
     }else{
         return(
             <ContentBox id="about">
-                <ContentInfoAboutMe>
-                    <TitleInfoAboutMe>Sobre Mi</TitleInfoAboutMe>
-                    <InfoAboutMe>Mi nombre es Darling Nomar De la Rosa Vanderhorst. Soy un desarrollador de Software graduado en el Intituto Tecnico Superior Comunitario (ITSC). Estudio diario para mejorar mis habilidades ademas intento utilizar el mayor tiempo posible para crecer en esta area. Intento ser mejor programador que ayer esa es una de mis principales metas.</InfoAboutMe>
-                </ContentInfoAboutMe>
-                <ContentAboutSkills>
-                    <TitleInfoAboutMe>Habilidades</TitleInfoAboutMe>
-                        <ContentIcons>
-                            <FaCss3/> <FaReact/> <FaNodeJs/> <FaBootstrap/> <FaHtml5/> 
-                            <SiMongodb/> <SiMaterialUi/> <SiGithub/> <SiStyledComponents/> <SiJavascript/> 
-                        </ContentIcons>  
-                </ContentAboutSkills>
+                <ContentAboutAndSkill>
+                    <ContentInfoAboutMe>
+                        <TitleInfoAboutMe>Sobre Mi</TitleInfoAboutMe>
+                        <InfoAboutMe>Mi nombre es Darling Nomar De la Rosa Vanderhorst. Soy un desarrollador de Software graduado en el Intituto Tecnico Superior Comunitario (ITSC). Estudio diario para mejorar mis habilidades ademas intento utilizar el mayor tiempo posible para crecer en esta area. Intento ser mejor programador que ayer esa es una de mis principales metas.</InfoAboutMe>
+                    </ContentInfoAboutMe>
+                    <ContentAboutSkills>
+                        <TitleInfoAboutMe>Habilidades</TitleInfoAboutMe>
+                            <ContentIcons>
+                                <FaCss3/> <FaReact/> <FaNodeJs/> <FaBootstrap/> <FaHtml5/> 
+                                <SiMongodb/> <SiMaterialUi/> <SiGithub/> <SiStyledComponents/> <SiJavascript/> 
+                            </ContentIcons>  
+                    </ContentAboutSkills>
+                </ContentAboutAndSkill>
             </ContentBox>
         )
     }
