@@ -25,7 +25,7 @@ const Contact = () => {
                             <ContactLabel htmlFor="message" gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"auto"} >Message</ContactLabel>
                             <ContactTextArea name="message" id="contactArea"/>
 
-                            <ContactButton type="submit" >Send</ContactButton>                        
+                            <ContactButton type="reset" >Send</ContactButton>                        
                         </form>
                     </ContactContent>
                 </ContentBox>
@@ -48,7 +48,7 @@ const Contact = () => {
                             <ContactLabel htmlFor="message" gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"auto"} >Mensaje</ContactLabel>
                             <ContactTextArea name="message" id="contactArea"/>
 
-                            <ContactButton type="submit">Enviar</ContactButton>                        
+                            <ContactButton type="reset">Enviar</ContactButton>                        
                         </form>
                     </ContactContent>
                 </ContentBox>
