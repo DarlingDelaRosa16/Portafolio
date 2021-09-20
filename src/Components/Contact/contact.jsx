@@ -43,7 +43,7 @@ const Contact = () => {
                         <ContactTitle >Contactame</ContactTitle>
                         <form 
                             name="contact-form" 
-                            id="contactInformation" 
+                            className="contactInformation" 
                             method="POST" 
                             data-netlify="true"
                             onSubmit="submit"
@@ -52,13 +52,13 @@ const Contact = () => {
                             <input type="hidden" name="form-name" value="contact-form" />
 
                             <ContactLabel htmlFor="name" gridColumn={"1/2"} >Nombre</ContactLabel>
-                            <ContactTextBox id="name" name="name" type="text" gridColumn={"1/2"}  />
+                            <ContactTextBox id="name" name="name" required type="text" gridColumn={"1/2"}  />
 
                             <ContactLabel htmlFor="email" gridColumn={"1/2"} >Email</ContactLabel>
-                            <ContactTextBox id="email" name="email" type="email" gridColumn={"1/2"} />
+                            <ContactTextBox id="email" name="email" required type="email" gridColumn={"1/2"} />
 
                             <ContactLabel htmlFor="message" gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"auto"} >Mensaje</ContactLabel>
-                            <ContactTextArea id="message" name="message" className="contactArea"/>
+                            <ContactTextArea id="message" name="message" required className="contactArea"/>
 
                             <ContactButton type="submit">Enviar</ContactButton>                        
                         </form>
