@@ -1,4 +1,4 @@
-#contactInformation{
+.contactInformation{
     grid-column: 1/3;
     display: grid;
     height: 320px;
@@ -6,6 +6,6 @@
     grid-template-columns: 1fr 1fr;
 }
 
-#contactArea{
+.contactArea{
     resize: none;
 }

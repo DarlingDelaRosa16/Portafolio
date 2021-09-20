@@ -14,7 +14,7 @@ const Contact = () => {
                         <ContactTitle >Contact me</ContactTitle>
                         <form 
                             name="contact" 
-                            id="contactInformation" 
+                            className="contactInformation" 
                             method="post"
                             data-netlify="true"
                             onSubmit="submit"
@@ -29,7 +29,7 @@ const Contact = () => {
                             <ContactTextBox id="email" name="email" gridColumn={"1/2"} />
 
                             <ContactLabel htmlFor="message" gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"auto"} >Message</ContactLabel>
-                            <ContactTextArea id="message" name="message" id="contactArea"/>
+                            <ContactTextArea id="message" name="message" className="contactArea"/>
 
                             <ContactButton type="submit" >Send</ContactButton>                        
                         </form>
@@ -58,7 +58,7 @@ const Contact = () => {
                             <ContactTextBox id="email" name="email" type="email" gridColumn={"1/2"} />
 
                             <ContactLabel htmlFor="message" gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"auto"} >Mensaje</ContactLabel>
-                            <ContactTextArea id="message" name="message" id="contactArea"/>
+                            <ContactTextArea id="message" name="message" className="contactArea"/>
 
                             <ContactButton type="submit">Enviar</ContactButton>                        
                         </form>
