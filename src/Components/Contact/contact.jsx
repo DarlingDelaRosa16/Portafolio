@@ -40,7 +40,7 @@ const Contact = () => {
         return (
             <ContentBox id="contact" >
                     <ContactContent >
-                        <ContactTitle >Contactame</ContactTitle>
+                        <ContactTitle >Contáctame</ContactTitle>
                         <form 
                             name="contact-form" 
                             className="contactInformation" 

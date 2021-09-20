@@ -43,7 +43,7 @@ const MainContent = () => {
                         <GreetingsContent>Hola, soy</GreetingsContent>
                         <NameContent> Darling De la Rosa Vanderhorst.</NameContent>
                         <CareerContent>Desarrollador Web</CareerContent>
-                        <Link to="contact" smooth={true} duration={1000}> <TouchMe>Contactame</TouchMe> </Link>
+                        <Link to="contact" smooth={true} duration={1000}> <TouchMe>Contáctame</TouchMe> </Link>
                     </InfoMainContent>
                 </InfoHeaderContent>
             </HeaderContent>
