@@ -13,23 +13,23 @@ const Contact = () => {
                     <ContactContent >
                         <ContactTitle >Contact me</ContactTitle>
                         <form 
-                            name="contact" 
+                            name="contact-form" 
                             className="contactInformation" 
-                            method="post"
+                            method="POST"
                             data-netlify="true"
                             onSubmit="submit"
                         >
                             
-                            <input type="hidden" name="form-name" value="contact" />
+                            <input type="hidden" name="form-name" value="contact-form" />
                             
                             <ContactLabel htmlFor="name" gridColumn={"1/2"} >Name</ContactLabel>
-                            <ContactTextBox id="name" name="name" gridColumn={"1/2"}  />
+                            <ContactTextBox id="name" name="name"  required  gridColumn={"1/2"}  />
                             
                             <ContactLabel htmlFor="email" gridColumn={"1/2"} >Email</ContactLabel>
-                            <ContactTextBox id="email" name="email" gridColumn={"1/2"} />
+                            <ContactTextBox id="email" name="email" required gridColumn={"1/2"} />
 
                             <ContactLabel htmlFor="message" gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"auto"} >Message</ContactLabel>
-                            <ContactTextArea id="message" name="message" className="contactArea"/>
+                            <ContactTextArea id="message" name="message" required className="contactArea"/>
 
                             <ContactButton type="submit" >Send</ContactButton>                        
                         </form>
@@ -42,14 +42,14 @@ const Contact = () => {
                     <ContactContent >
                         <ContactTitle >Contactame</ContactTitle>
                         <form 
-                            name="contact" 
+                            name="contact-form" 
                             id="contactInformation" 
-                            method="post" 
+                            method="POST" 
                             data-netlify="true"
                             onSubmit="submit"
                         >
                             
-                            <input type="hidden" name="form-name" value="contact" />
+                            <input type="hidden" name="form-name" value="contact-form" />
 
                             <ContactLabel htmlFor="name" gridColumn={"1/2"} >Nombre</ContactLabel>
                             <ContactTextBox id="name" name="name" type="text" gridColumn={"1/2"}  />
