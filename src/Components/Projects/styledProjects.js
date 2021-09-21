@@ -96,7 +96,7 @@ export const ProjectsTitle = styled.h1`
 export const ProjectsDescription = styled.p`
     grid-row: 2/3;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     margin: 0;
     grid-column: 1/3;
     font-size: 15px;
@@ -109,7 +109,7 @@ export const ProjectsDescription = styled.p`
 export const ProjectsLink = styled.a`
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     text-align:center;
     font-size: 14px;
     padding-top: 5px;

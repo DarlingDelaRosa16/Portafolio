@@ -46,7 +46,7 @@ export const TitleInfoAboutMe = styled.h3`
 export const InfoAboutMe = styled.p`
     margin:0;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     grid-row: auto;
     text-align: justify;
     font-size: 22px;

@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const AppContent = styled.div`
     width: 100%;
     min-height: 657px;
+    @media (min-width: 1366px){
+        width: 1366px;
+        margin-left: ${(props)=> props.width}
+    }
 `;
 
 export const HeaderContent = styled.div`
@@ -30,7 +34,7 @@ export const ImgContent = styled.div`
     grid-column: 1/2;
     background-image: url("https://i.imgur.com/c9mct83.jpg");
     background-repeat: no-repeat;
-    background-position: -30px -75px;
+    background-position: -25px -75px;
     border-radius: 5px;
     margin: 0px 5px 5px 0px;
     border: 2px solid blue;
@@ -67,13 +71,13 @@ export const NameContent = styled.h1`
     font-weight: 700;
     color: white;
     @media (max-width: 610px){
-        font-size: 60px;
-    }
-    @media (max-width: 352px){
         font-size: 50px;
     }
+    @media (max-width: 450px){
+        font-size: 35px;
+    }
     @media (max-width: 290px){
-        font-size: 45px;
+        font-size: 25px;
     }
 `;
 
@@ -83,8 +87,11 @@ export const GreetingsContent = styled(NameContent)`
     @media (max-width: 610px){
         font-size: 30px;
     }
-    @media (max-width: 352px){
+    @media (max-width: 450px){
         font-size: 25px;
+    }
+    @media (max-width: 352px){
+        font-size: 19px;
     }
 `;
 
@@ -94,8 +101,11 @@ export const CareerContent = styled(NameContent)`
     @media (max-width: 610px){
         font-size: 40px;
     }
-    @media (max-width: 352px){
+    @media (max-width: 450px){
         font-size: 30px;
+    }
+    @media (max-width: 352px){
+        font-size: 23px;
     }
     
 `;
@@ -115,5 +125,10 @@ export const TouchMe = styled.button`
     &:hover{
         cursor: pointer;
         color: #B22222;
+    }
+    @media (max-width: 610px){
+        font-size: 17px;
+        height: 30px;
+        width: 120px;
     }
 `;

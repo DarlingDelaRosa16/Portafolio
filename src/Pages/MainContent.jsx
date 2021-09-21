@@ -11,9 +11,11 @@ import LanguageContext from '../Context/languageContext'
 const MainContent = () => {
     const [/*setLanguage*/, language] = useContext(LanguageContext)
 
+    const adaptedWidth = (window.innerWidth-1300)/2;
+    console.log(adaptedWidth)
     if(language === "EN"){
         return (
-            <AppContent>
+            <AppContent width={adaptedWidth}>
             <HeaderContent>
                 <Menu/>
                 <InfoHeaderContent>               
