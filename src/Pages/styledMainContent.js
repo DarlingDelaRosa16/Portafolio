@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const AppContent = styled.div`
     width: 100%;
     min-height: 657px;
-    @media (min-width: 1366px){
-        width: 1366px;
+    @media (min-width: 1400px){
+        width: 1400px;
         margin-left: ${(props)=> props.width}
     }
 `;
@@ -42,6 +42,9 @@ export const ImgContent = styled.div`
     @media (max-width: 1100px){
         display: none;
         margin: 0;
+    }
+    @media (min-width: 1395px){
+        background-position: -15px -75px;
     }
 `;
 
