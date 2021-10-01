@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import LanguageContext from '../../Context/languageContext'    
 import {ContentBox, ContentAboutAndSkill ,ContentInfoAboutMe, TitleInfoAboutMe,ContentIcons, InfoAboutMe, ContentAboutSkills} from './styledAbout'
 import {FaReact, FaNodeJs, FaBootstrap, FaHtml5, FaCss3} from 'react-icons/fa'
-import { SiStyledComponents, SiMongodb, SiJavascript, SiMaterialUi, SiGithub } from "react-icons/si";
+import { SiStyledComponents, SiRedux, SiMongodb, SiJavascript, SiMaterialUi, SiGithub } from "react-icons/si";
 
 const About = () => {
 
@@ -19,7 +19,7 @@ const About = () => {
                     <ContentAboutSkills>
                         <TitleInfoAboutMe>Skills</TitleInfoAboutMe>
                             <ContentIcons>
-                                <FaCss3/> <FaReact/> <FaNodeJs/> <FaBootstrap/> <FaHtml5/> 
+                                <FaCss3/> <FaReact/> <FaNodeJs/> <FaBootstrap/> <FaHtml5/> <SiRedux/>
                                 <SiMongodb/> <SiMaterialUi/> <SiGithub/> <SiStyledComponents/> <SiJavascript/> 
                             </ContentIcons>  
                     </ContentAboutSkills>
@@ -37,7 +37,7 @@ const About = () => {
                     <ContentAboutSkills>
                         <TitleInfoAboutMe>Habilidades</TitleInfoAboutMe>
                             <ContentIcons>
-                                <FaCss3/> <FaReact/> <FaNodeJs/> <FaBootstrap/> <FaHtml5/> 
+                                <FaCss3/> <FaReact/> <FaNodeJs/> <FaBootstrap/> <FaHtml5/> <SiRedux/>
                                 <SiMongodb/> <SiMaterialUi/> <SiGithub/> <SiStyledComponents/> <SiJavascript/> 
                             </ContentIcons>  
                     </ContentAboutSkills>

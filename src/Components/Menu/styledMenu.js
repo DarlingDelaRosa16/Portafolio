@@ -57,16 +57,21 @@ export const MenuBoxDropDown = styled.div`
 export const MenuLogo = styled.h1`
     color: white;
     display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     grid-row:2/3;
     font-size: 21px;
     height: 30px;
     margin-top: 10px;   
+    &:hover{
+        cursor: default;
+    }
 
 `;
 
 export const MenuButton = styled.button`
     color: white;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Montserrat', sans-serif;  
     width: auto;
     font-size: 15px;
     margin-top: 10px;

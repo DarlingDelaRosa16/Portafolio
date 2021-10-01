@@ -17,6 +17,14 @@ export const dataProjects = [
     },
     {
         id: 3,
+        name: "RentCar",
+        description: "This application is using Redux,js , Is a simple app for change the state. The porpuse was practice (Actions, Reducers, Store) and learn about Redux devtools. ",
+        img: "https://i.imgur.com/okYBFh6.png",
+        urlLive: "https://rentcar-redux.netlify.app",
+        urlGithub: "https://github.com/DarlingDelaRosa16/Rent-car"
+    },
+    {
+        id: 4,
         name: "Portafolio_V1",
         description: "This aplication was create using React.js, StyedComponets. This is a portafolio what I did for practice StyledComponents and I can say that is a inicial version of this one.",
         img: "https://i.imgur.com/BE7Wzf3.png",
@@ -24,14 +32,13 @@ export const dataProjects = [
         urlGithub: "https://github.com/DarlingDelaRosa16/Portafolio_V1"
     },
     {
-        id: 4,
+        id: 5,
         name: "MyMotoApp",
         description: "This aplication is being create whit React.js, StyledComponent, React-map. This Aplication will be for call MotoTaxis sendind a location. I'm working in the backend",
         img: "https://i.imgur.com/yf51zWt.png",
         urlLive: "https://my-moto-app.netlify.app",
         urlGithub: "https://github.com/DarlingDelaRosa16/MyMotoApp"
     }
-    
 ]
 
 export const informacionDeProyectos = [
@@ -46,13 +53,21 @@ export const informacionDeProyectos = [
     {
         id: 2,
         name: "Comunity app Node.js",
-        description: "Es un Backend de (Comunity app) fue creado con Node.js, Express y MongoDB atlas. El proposito fue unicamente practica.",
+        description: "Es un Backend para (Comunity app), fue creado con Node.js, Express y MongoDB atlas. El proposito fue unicamente practica.",
         img: "https://i.imgur.com/MIU33gi.png",
         urlLive: "https://comunity-news.herokuapp.com",
         urlGithub: "https://github.com/DarlingDelaRosa16/Comunity-news-Nodejs"
     },
     {
         id: 3,
+        name: "RentCar",
+        description: "Es una aplicacion creada utilizando Redux.js, Esta cambia el estado cuando un carro es rentado o devuelto, fue creada como una practica para conocer las propiedades de Redux y Reduc devtools ",
+        img: "https://i.imgur.com/okYBFh6.png",
+        urlLive: "https://rentcar-redux.netlify.app",
+        urlGithub: "https://github.com/DarlingDelaRosa16/Rent-car"
+    },
+    {
+        id: 4,
         name: "Portafolio_V1",
         description: "Esta aplicacion fue creada utilizando React.js, StyedComponets. Es un portafolio creado para practicar StyledComponents se puede decir que es una primera version de este.",
         img: "https://i.imgur.com/BE7Wzf3.png",
@@ -60,7 +75,7 @@ export const informacionDeProyectos = [
         urlGithub: "https://github.com/DarlingDelaRosa16/Portafolio_V1"
     },
     {
-        id: 4,
+        id: 5,
         name: "MyMotoApp",
         description: "Esta aplicacion esta siendo creada React.js, StyledComponent, React-map. Esta aplicacion sera para llamar MotoTaxis enviando una localizacion. Estoy trabajando en el backend.",
         img: "https://i.imgur.com/yf51zWt.png",

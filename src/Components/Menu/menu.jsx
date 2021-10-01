@@ -1,6 +1,6 @@
 import React, {useContext, useState} from 'react'
 import "./menu.css"
-import Resume from '../../Resume/Resume.pdf'
+import Resume from '../../Resume/Myresume.pdf'
 import Curriculum from '../../Resume/Curriculum.pdf'
 import { FiMenu } from "react-icons/fi";
 import LanguageContext from '../../Context/languageContext'
@@ -34,7 +34,7 @@ const Menu = () => {
             <>
                 <MenuBox >
                         
-                        <MenuLogo>XD</MenuLogo>
+                        <MenuLogo> DDV. </MenuLogo>  
                         
                         <Link className="navButton"  to="about" smooth={true} duration={600}>About me</Link>
                         <Link className="navButton"  to="projects" smooth={true} duration={800}>Projects</Link>
@@ -64,7 +64,7 @@ const Menu = () => {
             <>
                 <MenuBox >
                         
-                        <MenuLogo>XD</MenuLogo>
+                        <MenuLogo>DDV.</MenuLogo>
                         
                         <Link className="navButton"  to="about" smooth={true} duration={600}>Sobre Mi</Link>
                         <Link className="navButton"  to="projects" smooth={true} duration={800}>Proyectos</Link>

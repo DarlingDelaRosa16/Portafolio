@@ -22,9 +22,20 @@ export const InfoHeaderContent = styled.div`
     grid-template-columns: 35% 65%;
     min-height: 566px;
 
+
     @media (max-width: 700px){
         width: 94%;
         margin-inline: 3%;
+    }
+
+    @keyframes titleAnimation {
+        0% { opacity: 0; left: 50%; }
+        100% { opacity: 1; left: 0%;}
+    }
+
+    @keyframes imgAnimation {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
     }
 `;
 
@@ -37,8 +48,10 @@ export const ImgContent = styled.div`
     background-position: -25px -75px;
     border-radius: 5px;
     margin: 0px 5px 5px 0px;
-    border: 2px solid blue;
-
+    border: 1px solid black;
+    animation-name: imgAnimation;
+    animation-duration: 3s;
+    
     @media (max-width: 1100px){
         display: none;
         margin: 0;
@@ -46,6 +59,7 @@ export const ImgContent = styled.div`
     @media (min-width: 1395px){
         background-position: -15px -75px;
     }
+    
 `;
 
 export const InfoMainContent = styled.div`
@@ -73,6 +87,10 @@ export const NameContent = styled.h1`
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: white;
+    position: relative;
+    animation-name: titleAnimation;
+    animation-duration: 2s;
+
     @media (max-width: 610px){
         font-size: 50px;
     }
@@ -87,6 +105,8 @@ export const NameContent = styled.h1`
 export const GreetingsContent = styled(NameContent)`
     font-size: 40px;
     grid-row: 1/2;
+    animation-duration: 1.5s;
+
     @media (max-width: 610px){
         font-size: 30px;
     }
@@ -101,6 +121,8 @@ export const GreetingsContent = styled(NameContent)`
 export const CareerContent = styled(NameContent)`
     font-size: 50px;
     grid-row: 3/4;
+    animation-duration: 2.5s;
+
     @media (max-width: 610px){
         font-size: 40px;
     }
@@ -117,6 +139,9 @@ export const TouchMe = styled.button`
     width: 140px;
     height: 40px;
     color: white;
+    position: relative;
+    animation-name: titleAnimation;
+    animation-duration: 3s;   
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;

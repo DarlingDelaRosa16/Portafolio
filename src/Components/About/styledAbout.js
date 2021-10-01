@@ -38,6 +38,7 @@ export const TitleInfoAboutMe = styled.h3`
     text-align: center;
     font-size: 30px;
     margin:0;
+    
     @media (max-width: 420px){
         font-size: 25px;
     }
@@ -50,6 +51,7 @@ export const InfoAboutMe = styled.p`
     grid-row: auto;
     text-align: justify;
     font-size: 22px;
+
     @media (max-width: 420px){
         font-size: 18px;
     }
@@ -63,6 +65,7 @@ export const ContentAboutSkills = styled(ContentInfoAboutMe)`
 export const ContentIcons = styled.div`
     font-size: 50px;
     text-align: center;
+    
     @media (max-width: 420px){
         font-size: 40px;
     }
