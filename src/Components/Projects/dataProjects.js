@@ -10,7 +10,7 @@ export const dataProjects = [
     {
         id: 2,
         name: "Comunity app Node.js",
-        description: "This is the backend of (Comunity app) was create whit Node.js, Express and MongoDB atlas. The porpuse was only practice.",
+        description: "This is the backend of (Comunity app) was create whit Node.js, Express and MongoDB atlas. The purpose was only practice.",
         img: "https://i.imgur.com/MIU33gi.png",
         urlLive: "https://comunity-news.herokuapp.com",
         urlGithub: "https://github.com/DarlingDelaRosa16/Comunity-news-Nodejs"
@@ -18,7 +18,7 @@ export const dataProjects = [
     {
         id: 3,
         name: "RentCar",
-        description: "This application is using Redux,js , Is a simple app for change the state. The porpuse was practice (Actions, Reducers, Store) and learn about Redux devtools. ",
+        description: "This application is using Redux,js , Is a simple app for change the state. The purpose was practice (Actions, Reducers, Store) and learn about Redux devtools. ",
         img: "https://i.imgur.com/okYBFh6.png",
         urlLive: "https://rentcar-redux.netlify.app",
         urlGithub: "https://github.com/DarlingDelaRosa16/Rent-car"
