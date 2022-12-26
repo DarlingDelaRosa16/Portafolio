@@ -1,61 +1,34 @@
-import {AppContent, HeaderContent, TouchMe, ImgContent, InfoMainContent, GreetingsContent, NameContent, InfoHeaderContent, CareerContent} from './styledMainContent';
-import React, {useContext} from 'react';
-import Menu from '../Components/Menu/menu';
-import About from '../Components/About/about'
-import Projects from '../Components/Projects/projects';
-import Contact from '../Components/Contact/contact';
-import Footer from '../Components/Footer/footer';
-import {Link} from 'react-scroll'
-import LanguageContext from '../Context/languageContext'
+import { Link } from 'react-scroll'
+import {Menu} from '../Components/Menu/menu';
+import {About} from '../Components/About/about'
+import {Projects} from '../Components/Projects/projects';
+import { Contact } from '../Components/Contact/contact';
+import {Footer} from '../Components/Footer/footer';
+import { AppContent, HeaderContent, TouchMe, ImgContent, InfoMainContent, GreetingsContent, NameContent, InfoHeaderContent, CareerContent } from './styledMainContent';
+import { useMainContent } from '../Hooks/useMainContent';
 
-const MainContent = () => {
-    const [/*setLanguage*/, language] = useContext(LanguageContext)
+export const MainContent = () => {
 
-    const adaptedWidth = (window.innerWidth-1300)/2;
-    console.log(adaptedWidth)
-    if(language === "EN"){
-        return (
-            <AppContent width={adaptedWidth}>
+    const { adaptedWidth, greetings, nameContent, careerContent, touchMe } = useMainContent()
+    return (
+        <AppContent width={adaptedWidth}>
             <HeaderContent>
-                <Menu/>
-                <InfoHeaderContent>               
-                    <ImgContent/>
+                <Menu />
+                <InfoHeaderContent>
+                    <ImgContent />
                     <InfoMainContent>
-                        <GreetingsContent>Hi, I'm</GreetingsContent>
-                        <NameContent> Darling De la Rosa Vanderhorst.</NameContent>
-                        <CareerContent>Web Developer</CareerContent>
-                        <Link to="contact" smooth={true} duration={1000}> <TouchMe>Get in Touch</TouchMe> </Link>
+                        <GreetingsContent>{greetings}</GreetingsContent>
+                        <NameContent>{nameContent}</NameContent>
+                        <CareerContent>{careerContent}</CareerContent>
+                        <Link to="contact" smooth={true} duration={1000}> <TouchMe>{ }{touchMe}</TouchMe> </Link>
                     </InfoMainContent>
                 </InfoHeaderContent>
             </HeaderContent>
-            <About/>
-            <Projects/>
-            <Contact/>
-            <Footer/>
+            <About />
+            <Projects />
+            <Contact />
+            <Footer />
         </AppContent>
-        );
-    }else{
-        return (
-            <AppContent>
-            <HeaderContent>
-                <Menu/>
-                <InfoHeaderContent>               
-                    <ImgContent/>
-                    <InfoMainContent>
-                        <GreetingsContent>Hola, soy</GreetingsContent>
-                        <NameContent> Darling De la Rosa Vanderhorst.</NameContent>
-                        <CareerContent>Desarrollador Web</CareerContent>
-                        <Link to="contact" smooth={true} duration={1000}> <TouchMe>Contáctame</TouchMe> </Link>
-                    </InfoMainContent>
-                </InfoHeaderContent>
-            </HeaderContent>
-            <About/>
-            <Projects/>
-            <Contact/>
-            <Footer/>
-        </AppContent>
-        )
-    }
+    );
+
 }
- 
-export default MainContent;

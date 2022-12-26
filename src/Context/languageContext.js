@@ -1,11 +1,12 @@
-import React, { createContext, useState } from 'react'
+import { createContext, useState } from 'react'
 
 const LanguageContext = createContext();  
 
-const LanguageProvider = ( {children} ) => {
+export const LanguageProvider = ({children}) => {
     
     let lang = ""
-    if(localStorage.getItem("language") !== undefined){
+
+    if(localStorage.getItem("language")){
         lang = localStorage.getItem("language")
     }else{
         localStorage.setItem("language", "EN")
@@ -19,5 +20,4 @@ const LanguageProvider = ( {children} ) => {
         </LanguageContext.Provider>
     );
 }
-export {LanguageProvider};
 export default LanguageContext;  

@@ -1,13 +1,10 @@
-import React from 'react';
 import { LanguageProvider } from './Context/languageContext';
-import MainContent from './Pages/MainContent';
+import {MainContent} from './Pages/MainContent';
 
-function App() {
+export function App() {
   return (
      <LanguageProvider>
         <MainContent/>
      </LanguageProvider>
   );
 }
-
-export default App;
