@@ -20,7 +20,7 @@ export const MainContent = () => {
                         <GreetingsContent>{greetings}</GreetingsContent>
                         <NameContent>{nameContent}</NameContent>
                         <CareerContent>{careerContent}</CareerContent>
-                        <Link to="contact" smooth={true} duration={1000}> <TouchMe>{ }{touchMe}</TouchMe> </Link>
+                        <Link to="contact" smooth={true} duration={1000}><TouchMe>{touchMe}</TouchMe> </Link>
                     </InfoMainContent>
                 </InfoHeaderContent>
             </HeaderContent>

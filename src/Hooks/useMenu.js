@@ -1,11 +1,15 @@
 import { useContext, useEffect, useState } from "react"
 import LanguageContext from "../Context/languageContext"
+import Resume from '../Resume/Darling_De_la_Rosa_Cv.pdf'
+import Curriculum from '../Resume/Darling_De_la_Rosa_Cr.pdf'
+
 
 export const useMenu = () => {
 
     const [setLanguage, language] = useContext(LanguageContext)
     const [onOpen, setOnOpen] = useState(false)
     const [infoLanguage, setInfoLanguage] = useState({})
+    
     
     const toggleLanguage = ()=>{
         setOnOpen(false)
@@ -29,14 +33,16 @@ export const useMenu = () => {
                 aboutMe: "About me",
                 projects: "Projects",
                 contact: "Contact",
-                resume: "Resume"
+                resume: "Resume",
+                cv: Resume
             })
         }else{
             setInfoLanguage({
                 aboutMe: "Sobre Mi",
                 projects: "Proyectos",
                 contact: "Contacto",
-                resume: "Curriculum"
+                resume: "Curriculum",
+                cv: Curriculum
             })
         }
     }, [language])
