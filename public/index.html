@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="https://i.imgur.com/zl8XOMz.png" />
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -17,19 +18,15 @@
     
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
-    <title>Darling De la rosa</title>
-    <style>
-      body{ margin: 0; padding: 0; display: flex; justify-content: center; background-color: rgb(243, 243, 243); }
-    </style>
+    <title>Darling De la Rosa</title>
   </head>
   <body>
 
     <form name="contact-form" netlify netlify-honeypot="bot-field"  action="/" hidden>
-      <input type="text" name="name">
-      <input type="text" name="email">
-      <textarea name="message"></textarea>
+      <input type="text" name="name"  hidden>
+      <input type="text" name="email" hidden>
+      <textarea name="message"  hidden></textarea>
     </form>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   
   </body>

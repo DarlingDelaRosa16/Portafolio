@@ -2,95 +2,91 @@ import styled from 'styled-components'
 
 export const MenuBox = styled.div`
     display: grid;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    grid-column:1/3;
-    color: white;
-    grid-row: 1/2;
-    width: 92%;
-    height: 90px;
-    grid-template-rows: 40px 50px;
-    grid-template-columns: 1fr auto;
-    margin-inline: 4%;
-    @media (max-width: 388px){
-        height: 60px;
-        grid-template-rows: 20px 40px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    width: 90%;
+    height: 10vh;
+
+    @keyframes menuBtnAnimation {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
     }
 `;
 
 export const MenuButtonDropDown = styled.button`
+    color: white;
     display:none;
-    width: auto;
-    margin-right:10px;
-    margin-left: 10px;
     font-size: 20px;
-    grid-row:2/3;
     border: none;
     background: none;
+    
     &:hover{
         cursor: pointer ;
     }
-    @media (max-width: 760px){
+    @media (max-width: 1130px){
         display: block;
+        grid-column: 5/6;
     }
     
 `;
 
 export const MenuBoxDropDown = styled.div`
-    visibility: ${(props)=> props.see ? "visible" : "hidden"};
+    visibility: ${(props) => props.see ? "visible" : "hidden"};
     width: 200px;
     position: absolute;
     display: grid;
-    grid-template-rows: auto;
     z-index: 1;
     right: 3px;
     border-radius: 5px;
     margin-top: -3px;
     background: white;
-    box-shadow: rgba(0, 0, 250, 0.4) 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.3) 0px -3px 0px inset;
 
-    @media (min-width: 760px){
+    @media (min-width: 1130px){
         display: none;
     }
 `;
 
 export const MenuLogo = styled.h1`
     color: white;
-    display: inline;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    grid-row:2/3;
     font-size: 21px;
-    height: 30px;
-    margin-top: 10px;   
+
     &:hover{
         cursor: default;
     }
 
 `;
 
+export const MenuOptions = styled.div`
+    display: grid;
+    grid-column: 2/3;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    animation-name: menuBtnAnimation;
+    animation-duration: 2s;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+    
+`;
+
 export const MenuButton = styled.button`
     color: white;
-    font-family: 'Montserrat', sans-serif;  
-    width: auto;
     font-size: 15px;
-    margin-top: 10px;
-    grid-row:2/3;
     border: none;
     background: none;
-    margin-left: 2px;
-    height: 20px;
+    animation-name: menuBtnAnimation;
+    animation-duration: 2s;
+
     &:hover{
         cursor: pointer ;
-        color: #B22222;
+        color: #1EF1DC;
     }
-    @media (max-width: 760px){
-        display: ${(props)=> props.display};
-        grid-row: 5/6;
-        text-align:center;
-        grid-column: 1/3;
-        margin-bottom: 10px;
-        color:black;
+    @media (max-width: 1130px){
+        display: ${(props) => props.display};
     }
     
 `;

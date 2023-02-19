@@ -1,11 +1,22 @@
 .contactInformation{
-    grid-column: 1/3;
     display: grid;
-    height: 320px;
-    grid-template-rows: 30px auto 30px ;
-    grid-template-columns: 1fr 1fr;
+    grid-row:3/4;
+    height: 45vh;
+    width:80%;
+    place-self:center;
+    grid-template-columns: 1fr 20px 1fr;
+    grid-template-rows: 10vh 25vh 10vh;
+
+
 }
 
 .contactArea{
     resize: none;
+}
+
+@media screen and (width <= 1024px) {
+    .contactInformation{
+        grid-template-rows: 12vh 12vh 30vh 15vh;
+        height: 71vh;
+    }
 }

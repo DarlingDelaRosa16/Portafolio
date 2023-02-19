@@ -1,4 +1,4 @@
-import { ContentBox, ContactContent, ContactTitle, ContactLabel, ContactTextBox, ContactButton, ContactTextArea } from './styledContact'
+import { ContentBox, ContactContent, ContactTitle, ContactLabel, ContactTextBox, ContactButton, ContactTextArea, LabelAndBox } from './styledContact'
 import "./contact.css"
 import { useContact } from '../../Hooks/useContact';
 
@@ -10,26 +10,34 @@ export const Contact = () => {
         <ContentBox id="contact">
             <ContactContent >
                 <ContactTitle>{contactMe}</ContactTitle>
-                <form
-                    name="contact-form"
-                    className="contactInformation"
-                    method="POST"
-                    data-netlify="true"
-                >
+                    <form
+                        name="contact-form"
+                        className="contactInformation"
+                        method="POST"
+                        data-netlify="true"
+                        autoComplete='off'
+                    >
 
-                    <input type="hidden" name="form-name" value="contact-form" />
+                        {/* <input type="hidden" name="form-name" value="contact-form" /> */}
+                        <LabelAndBox gridCol={"1/2"}  gridSmCol={"1/4"}> 
+                            <ContactLabel htmlFor="name">{name}</ContactLabel>
+                            <ContactTextBox id="name" placeholder={name} name="name" required gridColumn={"1/2"} />
+                        </LabelAndBox>
 
-                    <ContactLabel htmlFor="name" gridColumn={"1/2"} >{name}</ContactLabel>
-                    <ContactTextBox id="name" placeholder={name} name="name" required gridColumn={"1/2"} />
+                        <LabelAndBox gridCol={"3/4"} gridSmCol={"1/4"} >
+                            <ContactLabel htmlFor="email">{email}</ContactLabel>
+                            <ContactTextBox id="email" placeholder={email} name="email" required gridColumn={"1/2"} />
+                        </LabelAndBox>
 
-                    <ContactLabel htmlFor="email" gridColumn={"1/2"} >{email}</ContactLabel>
-                    <ContactTextBox id="email" placeholder={email} name="email" required gridColumn={"1/2"} />
+                        <LabelAndBox gridCol={"1/4"}>
+                        <ContactLabel htmlFor="message">{message}</ContactLabel>
+                        <ContactTextArea id="message" placeholder={message} name="message" required className="contactArea" />
+                        </LabelAndBox>
 
-                    <ContactLabel htmlFor="message" gridColumn={"2/3"} gridRow={"1/2"} gridC={"1/2"} gridR={"auto"} >{message}</ContactLabel>
-                    <ContactTextArea id="message" placeholder={message} name="message" required className="contactArea" />
 
-                    <ContactButton type="submit" >{send}</ContactButton>
-                </form>
+
+                        <ContactButton type="submit">{send}</ContactButton>
+                    </form>
             </ContactContent>
         </ContentBox>
     );

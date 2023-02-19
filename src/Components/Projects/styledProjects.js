@@ -1,129 +1,127 @@
 import styled from 'styled-components'
 
 export const ContentBox = styled.div`
-    width: 80%;
-    margin-left:10%;
-    min-height: 657px;
-    @media (max-width: 1178px){
-        width: 90%;
-        margin-inline:5%;
-    }
-    @media (max-width: 700px){
-        width: 94%;
-        margin-inline: 3%;
-    }
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 100vh;
+    
 `;
 
 export const ContentProjects = styled.div`
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr) );
-    grid-template-rows: auto;
-    
-    @media (max-width: 412px){
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
-    }
+    grid-template-rows: 10vh auto;
+    width: 80%;
+    min-height: 100vh;
 `;
 
+export const ContentCardProjects = styled.div`
+    display: grid;
+    width: 100%;
+`;
+
+
 export const TitleProjects = styled.h3`
-    grid-row: auto;
-    margin-top: 0;
+    margin:0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 30px;
-    @media (max-width: 420px){
+    color: #1C71B1;
+
+    @media (max-width: 440px){
         font-size: 25px;
     }
 `;
 
 export const ProjectsCard = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    background: white;
+    margin-bottom: 15px;
+    place-items: center;
+    grid-template-columns: 60% 40%;
+    width:100%;
+    height: 40vh;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 250, 0.4) 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.2) 0px -3px 0px inset;
-    width:95%;
-    height: 285px;
-    margin: 10px;
+    box-shadow: #1C71B1 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.2) 0px -3px 0px inset;
     
-    @media (max-width: 426px){
+    @media (max-width: 1000px){
         grid-template-rows: 1fr 1fr;
+        height: 85vh;
+        grid-template-rows: 35vh 50vh;
     }
 `;
 
 export const ProjectsImg = styled.div`
-    width: 100%;
-    margin:2px 0px 7px 2px;
-    border-radius: 5px 0px 0px 5px;
-    grid-column:1/5 ;
-    background-image:url(${(props)=> props.url}); 
+    width: 90%;
+    height: 36vh;
+    border-radius: 5px;
+    grid-column:1/2 ;
+    background-image:url(${(props)=> props.url});
     background-size: cover;
-    @media (max-width: 426px){
+
+    @media (max-width: 1000px){
         margin:0;
-        border-radius: 5px 5px 0 0;
-        grid-column:1/8 ;
-        grid-row:1/2;
+        height: 35vh;
+        grid-column:1/3;
     }
 `;
 
 export const ProjectsInfo = styled.div`
-    grid-column:5/8 ;
+    width:80%;
+    height: 36vh;
     display: grid;
-    grid-template-rows: auto auto 40px;
+    place-items: center;
     grid-template-columns: 1fr 1fr;
-    border-radius: 0px 5px 5px 0px;
-    margin: 2px 2px 7px 5px;
+    grid-template-rows: 7vh 22vh 7vh;
+    grid-column: 2/3;
+    border-radius: 5px;
+    color: #1C71B1;
     
-    @media (max-width: 426px){
+    @media (max-width: 1000px){
         margin:0;
-        border-radius: 0 0 5px 5px ;
-        grid-column:1/8 ;
-        grid-row:2/3;
+        height: 50vh;
+        grid-column:1/3 ;
+        grid-template-rows: 5vh 35vh 10vh;
     }
 `;
 
 export const ProjectsTitle = styled.h1`
-    grid-row: 1/2;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
     margin: 0;
     grid-column: 1/3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     font-size: 20px;
-    text-align:center;
 `;
 
 export const ProjectsDescription = styled.p`
-    grid-row: 2/3;
+    grid-column: 1/3;
+    margin: 0;
+    text-align: justify;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    margin: 0;
-    grid-column: 1/3;
     font-size: 15px;
-    text-align:center;
-    @media (max-width: 985px) and (min-width: 890px){
-        font-size: 14px;
+    
+    @media (max-width: 380px){
+        font-size: 13px;
     }
 `;
 
 export const ProjectsLink = styled.a`
-    align-items: center;
+    
+    padding: 10px;
+    width: 80px;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    text-align:center;
     font-size: 14px;
-    padding-top: 5px;
-    grid-column: ${(props)=> props.column};
-    margin: 5px;
+    color: white;
     border: none;
-    background: none;
+    border-radius: 5px;
     text-decoration: none;
-    color: black;
-    grid-row: 3/4;
-    box-shadow: rgba(0, 0, 250, 0.4) 0px 2px 4px, rgba(0, 0, 250, 0.1) 0px 7px 13px -3px, rgba(0, 0, 250, 0.1) 0px -3px 0px inset;
+    background: #1C71B1;
 
     &:hover{
         cursor: pointer;
-        box-shadow: rgba(178, 34, 34, 0.7) 0px 2px 4px, rgba(178, 34, 34, 0.4) 0px 7px 13px -3px, rgba(178, 34, 34, 0.2) 0px -3px 0px inset; 
+        color: #1EF1DC;
    }
 `;

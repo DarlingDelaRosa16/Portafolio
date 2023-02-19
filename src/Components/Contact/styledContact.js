@@ -1,65 +1,62 @@
 import styled from 'styled-components'
 
 export const ContentBox = styled.div`
+    display: grid;
     width: 100%;
-    height: 657px;
-    display: flex;
-    align-items: center;
+    height: 100vh;
+    place-items: center;
 `;
 
 export const ContactContent = styled.div`
     display: grid;
-    grid-template-rows: auto ;
+    grid-template-rows: 15vh 5vh 65vh 15vh;
     width: 80%;
-    margin-inline:10%;
-    height: 430px;
-    border-radius: 5px;
+    height: 100vh;
     
-    @media (max-width: 1178px){
-        width: 90%;
-        margin-inline:5%;
-    }
-    @media (max-width: 700px){
-        width: 94%;
-        margin-inline: 3%;
-    }
-    @media (max-width: 500px){
-        height: 500px;
+    @media (max-width: 1024px){
+        width: 100%;
+        grid-template-rows: 5vh 10vh 75vh ;
     }
     
 `;
 
 export const ContactTitle = styled.h3`
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    margin: 0px;
+    grid-row: 2/3;
     width:100%;
-    grid-row:auto;
     text-align:center;
-    grid-column: 1/3;
-    @media (max-width: 420px){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #1C71B1;
+
+    @media (max-width: 440px){
         font-size: 25px;
     }
 `;
 
+export const LabelAndBox = styled.span`
+    grid-column: ${(props)=> props.gridCol};
+
+    @media (max-width: 1024px){
+        grid-column: ${(props)=> props.gridSmCol};
+    }
+`;
+
+
 export const ContactTextBox = styled.input`
+    width: 100%;
+    height:45px;
+    margin-top: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
-    grid-column:${(props)=> props.gridColumn} ;
-    font-size:19px;
-    width: 95%;
-    margin-bottom: 10px;
+    font-size: 19px;
+    box-shadow: #1C71B1 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.2) 0px -3px 0px inset;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 250, 0.4) 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.2) 0px -3px 0px inset;
     border: none;
 
     &:focus{
         outline:none;
-        box-shadow: rgba(178, 34, 34, 0.7) 0px 2px 4px, rgba(178, 34, 34, 0.4) 0px 7px 13px -3px, rgba(178, 34, 34, 0.2) 0px -3px 0px inset; 
-    }
-    
-    @media (max-width: 700px){
-        grid-column:1/3;
     }
 `;
 
@@ -67,65 +64,41 @@ export const ContactLabel = styled.label`
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    grid-column:${(props)=> props.gridColumn} ;
-    grid-row:${(props)=> props.gridRow} ;
-
-    @media (max-width: 700px){
-        grid-column:${(props)=> props.gridC} ;
-        grid-row:${(props)=> props.gridR} ;
-    }
 `;
 
 export const ContactTextArea = styled.textarea`
-    grid-column: 2/3;
+    width: 100%;
+    height: 175px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     font-size:20px;
-    grid-row: 2/5;
-    width: 95%;
-    margin-bottom: 10px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 250, 0.4) 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.2) 0px -3px 0px inset;
+    box-shadow: #1C71B1 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.2) 0px -3px 0px inset;
     border: none;
 
     &:focus{
         outline:none;
-        box-shadow: rgba(178, 34, 34, 0.7) 0px 2px 4px, rgba(178, 34, 34, 0.4) 0px 7px 13px -3px, rgba(178, 34, 34, 0.2) 0px -3px 0px inset; 
     }
-    
-    @media (max-width: 700px){
-        width: 95%;
-        grid-column:1/3;
-        grid-row: 6/8;
+    @media (max-width: 380px){
+        height: 155px;
     }
     
 `;
 
 export const ContactButton = styled.button` 
     width: 130px;
+    height: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 20px;
+    border-radius: 5px; 
+    box-shadow: #1C71B1 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.2) 0px -3px 0px inset;
     background: none;
     border: none;
-    border-radius: 5px; 
-    grid-column:1/2;
-    grid-row :auto;
-    height: 40px;
-    box-shadow: rgba(0, 0, 250, 0.4) 0px 2px 4px, rgba(0, 0, 250, 0.3) 0px 7px 13px -3px, rgba(0, 0, 250, 0.2) 0px -3px 0px inset;
 
     &:hover{
         cursor: pointer;
-        box-shadow: rgba(178, 34, 34, 0.7) 0px 2px 4px, rgba(178, 34, 34, 0.4) 0px 7px 13px -3px, rgba(178, 34, 34, 0.2) 0px -3px 0px inset; 
+        background: #1C71B1 ;
+        color: white;
     }
-
-    @media (max-width: 700px){
-        grid-column:1/3;
-        grid-row: 8/9;
-    }
-    @media (max-width: 380px){
-        grid-column:1/2;
-        grid-row: 8/10;
-        width: 94%;
-    } 
 `;
