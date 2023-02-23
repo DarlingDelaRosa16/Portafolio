@@ -85,8 +85,20 @@ export const MenuButton = styled.button`
         cursor: pointer ;
         color: #1EF1DC;
     }
+
     @media (max-width: 1130px){
         display: ${(props) => props.display};
+        color: black;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        margin-top:15px;
+
+        &:hover{
+            color: black;
+        }
     }
+
+    
     
 `;
