@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import LanguageContext from "../Context/languageContext"
-import Resume from '../Resume/Darling_De_la_Rosa_Cv.pdf'
-import Curriculum from '../Resume/Darling_De_la_Rosa_Cr.pdf'
+import Resume from '../Resume/DarlingDelaRosaCv.pdf'
+import Curriculum from '../Resume/DarlingDelaRosaCvEs.pdf'
 
 
 export const useMenu = () => {
