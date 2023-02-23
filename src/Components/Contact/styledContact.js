@@ -69,6 +69,7 @@ export const ContactLabel = styled.label`
 export const ContactTextArea = styled.textarea`
     width: 100%;
     height: 175px;
+    margin-top: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     font-size:20px;
